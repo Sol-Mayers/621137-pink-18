@@ -1,0 +1,106 @@
+@adColorBlue: #283645;
+@adColorBlack: #000000;
+
+.ad-flex(@display; @direction; @justify; @items;) {
+  display: @display;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @items;
+}
+.advertisement-app__slogans {
+  .ad-flex(flex; column; center; center);
+  background-color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 50px;
+  color: @adColorBlue;
+  position: relative;
+  z-index: 1;
+}
+.advertisement-app__slogans::after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-6deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+.slogans__item {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.slogan__item--bottom {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.advertisement-app__advantages {
+  .ad-flex(flex; column; center; center);
+  text-align: center;
+  color: @adColorBlack;
+  background-color: #f2f2f2;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 50px;
+}
+.item__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+.item__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+.advantages__mobile {
+  width: 157px;
+  height: 320px;
+  background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
+  margin-top: 25px;
+}
+.slider-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-top: 20px;
+}
+.review__controls--hidden {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.description--title {
+  font-size: 18px;
+  line-height: 30px;
+}
+.description--text {
+  font-size: 14px;
+  line-height: 30px;
+}
+.slider-review {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 40px;
+}
+.slider-review::after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-6deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
