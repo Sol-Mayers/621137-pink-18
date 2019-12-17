@@ -4,24 +4,23 @@
 
 .name__list {
   width: @width;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .ad-flex(flex; column; center; center; wrap);
   padding-left: 0px;
 }
-.item--text {
-    height: 59px;
+.item {
+  &--text {
+    min-height: 59px;
     width: @width;
     font-size: 18px;
-}
-.item--surname,
-.item--name,
-.item--thirdname {
+  }
+  &--surname,&--name,&--thirdname {
     color: @pink-color;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 30px;
     margin-bottom: 2px;
     margin-left: 20px;
+  }
 }
+
+

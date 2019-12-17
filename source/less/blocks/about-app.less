@@ -4,18 +4,12 @@
 .about-app {
   background-color: @appBackground;
   color: @appTextColor;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .ad-flex(flex; column; center; center; wrap);
 }
 .about-app__download {
   width: 281px;
   height: 55px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  .ad-flex(flex; row; center; center; wrap);
   border: 2px solid #ffffff;
   border-radius: 30px;
   margin-top: 28px;
@@ -27,16 +21,10 @@
   width: 232px;
 }
 .download__menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .ad-flex(flex; column; center; center; wrap);
 }
 .download__menu-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  .ad-flex(flex; row; center; center; wrap);
   margin-bottom: 25px;
 }
 .download__menu--apple {
@@ -55,10 +43,7 @@
   background: url(../img/logo-microsoft.svg) no-repeat center;
 }
 .download__menu--description {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
+  .ad-flex(flex; row; center; center; wrap);
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;

@@ -1,8 +1,5 @@
 .system__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .ad-flex(flex; column; center; center; wrap);
   padding-left: 0px;
   margin-top: 30px;
   background-color: #f2f2f2;
@@ -25,10 +22,7 @@
   margin-bottom: 20px;
 }
 .system__wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
+    .ad-flex(flex; row; flex-start; center; wrap);
     color: @blue-color;
     font-size: 18px;
 }

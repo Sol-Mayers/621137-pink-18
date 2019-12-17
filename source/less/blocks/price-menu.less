@@ -1,18 +1,14 @@
+@greyColour: #f2f2f2;
+
 .price-menu {
   margin-top: 0px;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: @greyColour;
+  .ad-flex(flex; column; center; center; wrap);
 }
 .slider-price {
   padding-top: 60px;
   width: 276px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .ad-flex(flex; column; center; center; wrap);
 }
 .slider__inner--price {
   width: 276px;
@@ -21,7 +17,7 @@
 .smiles,
 .comments {
   list-style: none;
-  outline: 2px solid #f2f2f2;
+  outline: 2px solid @greyColour;
   padding: 12px 22px 12px 22px;
 }
 .price-title {
@@ -34,7 +30,27 @@
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 0px;
-
+}
+.price-title-hit {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  background: url(../img/bg-hit.svg) no-repeat;
+  background-color: #283645;
+  position: relative;
+}
+.hit {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  transform: rotate(-45deg);
+  font-weight: normal;
+  font-size: 15px;
 }
 .cost {
   font-size: 24px;
@@ -44,7 +60,7 @@
 .price--1,
 .price--2,
 .price--3 {
-  outline: 2px solid #f2f2f2;
+  outline: 2px solid @greyColour;
 }
 .price__option {
   background-color: #ffffff;
@@ -62,4 +78,39 @@
   margin-top: 35px;
   margin-bottom: 45px;
 }
-
+.standart-pink {
+  margin-left: 75px;
+  fill: #3dc644;
+}
+.standart-comments {
+  margin-left: 95px;
+  fill: #f25b26;
+}
+.standart-smiles {
+  margin-left: 125px;
+  fill: #3dc644;
+}
+.base-pink {
+  margin-left: 75px;
+  fill: #3dc644;
+}
+.base-comments {
+  margin-left: 95px;
+  fill: #f25b26;
+}
+.base-smiles {
+  margin-left: 125px;
+  fill: #3dc644;
+}
+.unlim-pink {
+  margin-left: 75px;
+  fill: #3dc644;
+}
+.unlim-comments {
+  margin-left: 95px;
+  fill: #f25b26;
+}
+.unlim-smiles {
+  margin-left: 125px;
+  fill: #3dc644;
+}
