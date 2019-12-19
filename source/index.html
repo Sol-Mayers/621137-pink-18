@@ -2,156 +2,227 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans: 100,300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   <header class="page-header">
-    <a class="page-header__home" href="index.html"><h1>Pink</h1></a>
+   <img src="img/bg-back-mobile@1xu.jpg" class="list__item--back" height="69" width="320">
     <nav class="page-header__menu">
-      <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="menu-list">
-          <li class="menu-list__item"><a href="index.html" class="item__link">Главная</a></li>
-          <li class="menu-list__item"><a href="photo.html" class="item__link">Фотографии</a></li>
-          <li class="menu-list__item"><a href="#" class="item__link">Конкурс</a></li>
-          <li class="menu-list__item"><a href="#" class="item__link">Html academy</a></li>
-        </ul>
+      <div class="list__item--upper">
+          <a href="index.html" class="item__link">
+            <img src="img/logo-pink-white-mobile.svg" alt="main-logo">
+          </a>
+          <button class="main-nav__toggle--burger">
+            <img src="img/icon-menu-burger.svg" alt="cross-icon" class="toggle__burger" width="50" height="25">
+          </button>
+          <button class="main-nav__toggle--cross-close">
+             <img src="img/icon-menu-cross.svg" alt="cross-icon" class="toggle__cross" width="24" height="24">
+          </button>
       </div>
+      <ul class="menu__list-close">
+        <li class="list__item">
+          <a href="index.html" class="item__link">Главная</a>
+        </li>
+        <li class="list__item">
+          <a href="photo.html" class="item__link">Фотографии</a>
+        </li>
+        <li class="list__item">
+          <a href="form.html" class="item__link">Конкурс</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="item__link">Html academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="page-main">
     <div class="main-background">
-      <div class="main-background__photo"></div>
+      <div class="main-background__photo">
+        <p class="photo__text">Взгляните на жизнь иначе!</p>
+      </div>
       <div class="main-background__front"></div>
     </div>
     <div class="about-app">
-      <a class="about-app__download">Скачать приложение</a>
+      <a href="#" class="about-app__download">Скачать приложение</a>
       <div class="download__menu">
-        <div class="download__menu--apple"></div>
-        <div class="download__menu--android"></div>
-        <div class="download__menu--windows"></div>
+        <div class="download__menu-icons">
+          <div class="download__menu--apple"></div>
+          <div class="download__menu--android"></div>
+          <div class="download__menu--windows"></div>
+        </div>
         <div class="download__menu--description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
       </div>
     </div>
     <div class="advertisement-app">
       <div class="advertisement-app__slogans">
         <p class="slogans__item">Устали от серости мегаполиса?</p>
-        <p class="slogans__item">Нам есть, что вам предложить!</p>
+        <p class="slogans__item--bottom">Нам есть, что вам предложить!</p>
       </div>
       <div class="advertisement-app__advantages">
         <div class="advantages__item">
-          <h2>Поднимает настроение</h2>
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <h2 class="item__title">Поднимает настроение</h2>
+          <p class="item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
         <div class="advantages__item">
-          <h2>Меняет мир вокруг</h2>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <h2 class="item__title">Меняет мир вокруг</h2>
+          <p class="item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
         <div class="advantages__item">
-          <h2>Заводит новых друзей</h2>
-          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <h2 class="item__title">Заводит новых друзей</h2>
+          <p class="item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
+        <div class="advantages__mobile"></div>
       </div>
       <div class="advertisement-app__image"></div>
       <section class="slider-review">
-        <input type="radio" class="slider__radio slider--btn-1 visually-hidden" id="slide-1" name="slide" checked>
-        <input type="radio" class="slider__radio slider--btn-2 visually-hidden" id="slide-2" name="slide">
-        <input type="radio" class="slider__radio slider--btn-3 visually-hidden" id="slide-3" name="slide">
-          <div class="slider__controls">
-            <label for="slide-1">Первый слайд</label>
-            <label for="slide-2">Второй слайд</label>
-            <label for="slide-3">Третий слайд</label>
-          </div>
-          <div class="slider__inner">
-            <div class="inner__slides">
-              <div class="slides__slide--1">
-                <div class="slide-description">
-                  <h3>Николай Петров</h3>
-                  <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </div>
-              </div>
-              <div class="slides__slide--2">
-                <div class="slide-description">
-                  <h3></h3>
-                  <p></p>
-                </div>
-              </div>
-              <div class="slides__slide--3">
-                <div class="slide-description">
-                  <h3></h3>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-    </div>
-    <div class="price-menu">
-      <section class="slider-price">
-        <input type="radio" class="slider__radio slider--btn-1 visually-hidden" id="slide-1" name="slide">
-        <input type="radio" class="slider__radio slider--btn-2 visually-hidden" id="slide-2" name="slide" checked>
-        <input type="radio" class="slider__radio slider--btn-3 visually-hidden" id="slide-3" name="slide">
-          <div class="slider__controls--price">
-            <label for="slide-1">Первый слайд</label>
-            <label for="slide-2">Второй слайд</label>
-            <label for="slide-3">Третий слайд</label>
-          </div>
-          <div class="slider__inner--price">
-            <div class="inner__slides--price">
-              <div class="price--1">
-                <div class="slide-description--price">
-                  <h3>База 1,99 usd</h3>
-                  <ul class="prise__option">
-                    <li class="pink-filter">Розовый фильтр</li>
-                    <li class="smiles">Смайлики</li>
-                    <li class="comments">Комментарии</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="price--2">
-                <div class="slide-description--pricehit">
-                  <h3>Стандарт 3,99 usd</h3>
-                  <ul class="prise__option">
-                    <li class="pink-filter">Розовый фильтр</li>
-                    <li class="smiles">Смайлики</li>
-                    <li class="comments">Комментарии</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="price--3">
-                <div class="slide-description--price">
-                  <h3>Анлим 9,99 usd</h3>
-                  <ul class="prise__option">
-                    <li class="pink-filter">Розовый фильтр</li>
-                    <li class="smiles">Смайлики</li>
-                    <li class="comments">Комментарии</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <div class="contacts">
-      <h3>Остались вопросы? Свяжитесь с нами!</h3>
-      <div class="conacts__option">
-        <div class="option--call">
-          <h3>Звоните:</h3>
-          <a href="tel:+78125550555" class="tel">+7 (812) 555-66-66</a>
-        </div>
-        <div class="option--write">
-          <h3>Пишите:</h3>
-          <a>mail@htmlacademy.ru</a>
-        </div>
-        <div class="option--come">
-          <h3>Приезжайте в гости:</h3>
-          <p>ул. Большая Конюшенная, 19/8</p>
-        </div>
-      </div>
-      <div class="contacts__map"></div>
-    </div>
-  </footer>
-  </body>
-</html>
+        <div class="slider__inner">
+           <div class="inner__slides">
+             <div class="slides__slide--1">
+               <div class="slide-description">
+                 <h3 class="description--title">Николай Петров</h3>
+                 <p class="description--text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+               </div>
+             </div>
+               <div class="slides__slide--2">
+                 <div class="slide-description">
+                   <h3></h3>
+                   <p></p>
+                 </div>
+               </div>
+               <div class="slides__slide--3">
+                 <div class="slide-description">
+                   <h3></h3>
+                   <p></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         <div class="review__controls--hidden">
+           <input type="radio" class="slider__radio slider--btn-1 visually-hidden" id="slide-1" name="slide" checked>
+           <input type="radio" class="slider__radio slider--btn-2 visually-hidden" id="slide-2" name="slide">
+           <input type="radio" class="slider__radio slider--btn-3 visually-hidden" id="slide-3" name="slide">
+         </div>
+         <div class="slider__controls">
+           <label for="slide-1"></label>
+           <label for="slide-2"></label>
+           <label for="slide-3"></label>
+         </div>
+       </section>
+     </div>
+     <div class="price-menu">
+       <section class="slider-price">
+         <div class="slider__inner--price">
+           <div class="inner__slides--price">
+             <div class="price--1">
+               <div class="slide-description--price">
+                 <h3 class="price-title">База <br><span class="cost">1,99 usd</span></h3>
+                 <ul class="price__option">
+                   <li class="pink-filter">Розовый фильтр
+                     <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="base-pink">
+                       <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                     </svg>
+                   </li>
+                   <li class="smiles">Смайлики
+                     <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="21" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve" class="base-smiles">
+                       <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                     </svg>
+                   </li>
+                   <li class="comments">Комментарии
+                     <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="21" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve" class="base-comments">
+                       <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                     </svg>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+               <div class="price--2">
+                 <div class="slide-description--pricehit">
+                   <h3 class="price-title-hit"><span class="hit">ХИТ</span>Стандарт<br><span class="cost">3,99 usd</span></h3>
+                   <ul class="price__option">
+                     <li class="pink-filter">Розовый фильтр
+                       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="standart-pink">
+                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                       </svg>
+                     </li>
+                     <li class="smiles">Смайлики
+                       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="standart-smiles">
+                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                       </svg>
+                     </li>
+                     <li class="comments">Комментарии
+                       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="21" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve" class="standart-comments">
+                         <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                       </svg>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+                 <div class="price--3">
+                   <div class="slide-description--price">
+                     <h3 class="price-title">Анлим<br><span class="cost">9,99 usd</span></h3>
+                     <ul class="price__option">
+                       <li class="pink-filter">Розовый фильтр
+                         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="unlim-pink">
+                           <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                         </svg>
+                       </li>
+                       <li class="smiles">Смайлики
+                         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="unlim-smiles">
+                           <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                         </svg>
+                       </li>
+                       <li class="comments">Комментарии
+                         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="unlim-comments">
+                           <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                         </svg>
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           <div class="price__controls--hidden">
+             <input type="radio" class="slider__radio slider--btn-1 visually-hidden" id="slide-1" name="slide">
+             <input type="radio" class="slider__radio slider--btn-2 visually-hidden" id="slide-2" name="slide" checked>
+             <input type="radio" class="slider__radio slider--btn-3 visually-hidden" id="slide-3" name="slide">
+           </div>
+           <div class="slider__controls--price">
+             <label for="slide-1"></label>
+             <label for="slide-2"></label>
+             <label for="slide-3"></label>
+           </div>
+       </section>
+     </div>
+   </main>
+   <footer class="page-footer">
+     <div class="contacts">
+       <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+       <div class="conacts__option">
+         <div class="option--call">
+           <h3 class="call__title">Звоните:</h3>
+           <a href="tel:+78125550555" class="tel">+7 (812) 555-66-66</a>
+         </div>
+         <div class="option--write">
+           <h3 class="call__title">Пишите:</h3>
+           <a class="call__academy">mail@htmlacademy.ru</a>
+         </div>
+         <div class="option--come">
+           <h3 class="call__title">Приезжайте в гости:</h3>
+           <p class="call__adress">ул. Большая Конюшенная, 19/8</p>
+         </div>
+       </div>
+       <div class="contacts__map--wrap">
+       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve" class="contacts__map--marker">
+         <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
+         <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+       </svg>
+       </div>
+     </div>
+   </footer>
+   <script src="js/script.js"></script>
+   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A39e9afccd8e6ce13f069b898572d435915614367a64518acfe72e4635da2f1dc&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+   </body>
+ </html>
