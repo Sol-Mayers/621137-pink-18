@@ -78,9 +78,18 @@
       </div>
       <div class="advertisement-app__image"></div>
       <section class="slider-review">
-        <div class="slider__inner">
-           <div class="inner__slides">
-             <div class="slides__slide--1">
+      <div class="slider">
+       <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <div class="slides__slide--1">
                <div class="slide-description">
                  <h3 class="description--title">Николай Петров</h3>
                  <p class="description--text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -88,35 +97,35 @@
              </div>
                <div class="slides__slide--2">
                  <div class="slide-description">
-                   <h3></h3>
-                   <p></p>
+                   <h3 class="description--title">Василий Иванов</h3>
+                   <p class="description--text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                  </div>
                </div>
                <div class="slides__slide--3">
                  <div class="slide-description">
-                   <h3></h3>
-                   <p></p>
+                   <h3 class="description--title">Валентина Скворцова</h3>
+                   <p class="description--text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                  </div>
                </div>
-             </div>
-           </div>
-         <div class="review__controls--hidden">
-           <input type="radio" class="slider__radio slider--btn-1 visually-hidden" id="slide-1" name="slide" checked>
-           <input type="radio" class="slider__radio slider--btn-2 visually-hidden" id="slide-2" name="slide">
-           <input type="radio" class="slider__radio slider--btn-3 visually-hidden" id="slide-3" name="slide">
-         </div>
-         <div class="slider__controls">
-           <label for="slide-1"></label>
-           <label for="slide-2"></label>
-           <label for="slide-3"></label>
-         </div>
-       </section>
+          </div>
+        </div>
+      </div>
+    </section>
      </div>
      <div class="price-menu">
        <section class="slider-price">
-         <div class="slider__inner--price">
-           <div class="inner__slides--price">
-             <div class="price--1">
+      <div class="slider-2">
+        <input type="radio" id="slide-1" name="toggle2">
+        <input type="radio" id="slide-2" name="toggle2" checked>
+        <input type="radio" id="slide-3" name="toggle2">
+        <div class="slider__controls--price">
+          <label for="slide-1"></label>
+          <label for="slide-2"></label>
+          <label for="slide-3"></label>
+        </div>
+        <div class="slider__inner--price">
+          <div class="inner__slides--price">
+            <div class="price--1">
                <div class="slide-description--price">
                  <h3 class="price-title">База <br><span class="cost">1,99 usd</span></h3>
                  <ul class="price__option">
@@ -142,7 +151,7 @@
                  <div class="slide-description--pricehit">
                    <h3 class="price-title-hit"><span class="hit">ХИТ</span>Стандарт<br><span class="cost">3,99 usd</span></h3>
                    <ul class="price__option">
-                     <li class="pink-filter">Розовый фильтр
+                     <li class="pink-filter-hit">Розовый фильтр
                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="standart-pink">
                          <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                        </svg>
@@ -162,7 +171,7 @@
                </div>
                  <div class="price--3">
                    <div class="slide-description--price">
-                     <h3 class="price-title">Анлим<br><span class="cost">9,99 usd</span></h3>
+                     <h3 class="price-title title-unlim">Анлим<br><span class="cost">9,99 usd</span></h3>
                      <ul class="price__option">
                        <li class="pink-filter">Розовый фильтр
                          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" class="unlim-pink">
@@ -182,19 +191,10 @@
                      </ul>
                    </div>
                  </div>
-               </div>
-             </div>
-           <div class="price__controls--hidden">
-             <input type="radio" class="slider__radio slider--btn-1 visually-hidden" id="slide-1" name="slide">
-             <input type="radio" class="slider__radio slider--btn-2 visually-hidden" id="slide-2" name="slide" checked>
-             <input type="radio" class="slider__radio slider--btn-3 visually-hidden" id="slide-3" name="slide">
-           </div>
-           <div class="slider__controls--price">
-             <label for="slide-1"></label>
-             <label for="slide-2"></label>
-             <label for="slide-3"></label>
-           </div>
-       </section>
+          </div>
+        </div>
+      </div>
+    </section>
      </div>
    </main>
    <footer class="page-footer">
@@ -207,7 +207,7 @@
          </div>
          <div class="option--write">
            <h3 class="call__title">Пишите:</h3>
-           <a class="call__academy">mail@htmlacademy.ru</a>
+           <a href="#" class="call__academy">mail@htmlacademy.ru</a>
          </div>
          <div class="option--come">
            <h3 class="call__title">Приезжайте в гости:</h3>
