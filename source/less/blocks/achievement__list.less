@@ -21,15 +21,48 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 2px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 .item-box {
+  display: none;
+}
+.item-box--change {
+  display: flex;
   width: 35px;
   height: 35px;
   margin-right: 33px;
+  position: relative;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.item-box--change:hover {
+  border-color: @blue-color;
+}
+.item-box--change::before {
+  content: "";
+  width: 20px;
+  height: 8px;
+  border: 2px solid @pink-color;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  transition: 0.2s;
+  transform: rotate(-45deg);
+}
+.item-box:checked + .item-box--change::before {
+  opacity: 1;
+}
+.item-box:checked + .item-box--change {
+  border-color: @pink-color;
 }
 .item-wrap {
   color: @blue-color;

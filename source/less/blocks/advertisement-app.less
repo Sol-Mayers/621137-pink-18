@@ -28,10 +28,12 @@
 .slogans__item {
   margin-top: 0px;
   margin-bottom: 15px;
+  width: 100%;
 }
-.slogan__item--bottom {
+.slogans__item--bottom {
   margin-top: 0px;
   margin-bottom: 20px;
+  width: 100%;
 }
 .advertisement-app__advantages {
   .ad-flex(flex; column; center; center; wrap);
@@ -41,6 +43,9 @@
   padding-left: 34px;
   padding-right: 34px;
   padding-top: 50px;
+}
+.advantages__item {
+  width: 100%;
 }
 .item__title {
   font-size: 18px;
@@ -56,14 +61,8 @@
   background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
   margin-top: 25px;
 }
-.slider-review {
-  .ad-flex(flex; column; center; center; wrap);
-  text-align: center;
-  padding-left: 27px;
-  padding-right: 27px;
-  margin-top: 20px;
-}
-.review__controls--hidden {
+
+.review__controls {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,11 +75,79 @@
   font-size: 14px;
   line-height: 30px;
 }
+
+
+.slider {
+  position: relative;
+  .ad-flex(flex; column-reverse; center; center; wrap);
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  width: 300%;
+  transition: transform 0.8s ease;
+}
+
+.slides__slide--1,
+.slides__slide--2,
+.slides__slide--3 {
+  float: left;
+  width: 320px;
+}
+
+.slider-controls {
+  margin-bottom: 10px;
+  text-align: center;
+  .ad-flex(flex; row; space-between; center; wrap);
+  width: 50px;
+}
+
+.slider-controls label {
+  .ad-flex(flex; row; center; center; wrap);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  cursor: pointer;
+  transition: border 0.2s;
+  border: 3px solid #ffffff;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  border: 3px solid @blue-color;
+  background-color: transparent;
+}
+
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-320px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+  transform: translate(-640px);
+}
 .slider-review {
   background-color: #ffffff;
   position: relative;
   z-index: 1;
   padding-bottom: 40px;
+  .ad-flex(flex; column; center; center; wrap);
+  text-align: center;
+  margin-top: 20px;
+  overflow: hidden;
 }
 .slider-review::after {
   background: inherit;
