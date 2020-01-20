@@ -33,18 +33,26 @@
 }
 .system__radio--change {
   display: flex;
+
+  .width-height(15px; 15px);
+
   margin-right: 33px;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
+
   .width-height(35px; 35px);
+
 }
 .system__radio--change:hover {
   border-color: @blue-color;
 }
 .system__radio--change::before {
   content: "";
+
+  .width-height(15px; 15px);
+
   background-color: @pink-color;
   border-radius: 50%;
   opacity: 0;
@@ -52,7 +60,9 @@
   top: 10px;
   left: 10px;
   transition: 0.2s;
+
   .width-height(15px; 15px);
+
 }
 .system__radio:checked + .system__radio--change::before {
   opacity: 1;
