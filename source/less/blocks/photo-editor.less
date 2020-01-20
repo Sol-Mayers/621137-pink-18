@@ -1,11 +1,21 @@
 .photo-editor {
   .ad-flex(flex; column; center; center; wrap);
   background-color: #f2f2f2;
+  min-width: 320px;
 }
 
 .photo-editor__fast-edit {
   width: 280px;
   margin-top: 20px;
+}
+
+@media (min-width: @tabletWidth) {
+  .photo-editor__fast-edit {
+  width: 660px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  }
 }
 .filters__icons {
   display: flex;
@@ -16,6 +26,14 @@
   box-sizing: border-box;
   padding-left: 38px;
   padding-right: 38px;
+}
+@media (min-width: @tabletWidth) {
+  .filters__icons {
+    flex-direction: column;
+    width: 24px;
+    padding: 0px;
+    height: 200px;
+  }
 }
 .filters__range {
   display: flex;
@@ -35,6 +53,9 @@
 }
 .range-style {
   width: 240px;
+}
+.customize__send-filters {
+  display: none;
 }
 .customize__send {
   width: 280px;
@@ -97,6 +118,142 @@
 }
 .icons__cast:active {
   fill: @pink-color;
+}
+
+@media (min-width: @tabletWidth) {
+  .icons__cast {
+    width: 24px;
+    fill: @pink-color;
+  }
+  .customize__send {
+    display: none;
+  }
+  .customize__send-filters {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    border-top: 2px solid #dddfe0;
+  }
+  .send-yes,
+  .send-no {
+    width: 260px;
+  }
+}
+
+.custimize__photo {
+  width: 280px;
+  height: 374px;
+  background: url(../img/photo-road-mobile@1x.jpg) no-repeat;
+}
+.tablet-range {
+  display: none;
+}
+@media (min-width: @tabletWidth) {
+  .custimize__photo {
+    width: 300px;
+    height: 400px;
+    background: url(../img/photo-road-tablet@1x.jpg) no-repeat;
+  }
+  .fast-edit--customize {
+    .ad-flex(flex; row; space-between; center; wrap);
+  }
+  .customize__filters {
+    width: 260px;
+    flex-direction: row;
+  }
+  .filters__range {
+    .ad-flex(flex; row; center; center; wrap);
+    width: 202px;
+    margin-top: 0px;
+  }
+  .filters__range-wrap {
+    .ad-flex(flex; column; space-between; center; wrap);
+    height: 200px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .tablet-range:nth-child(2) {
+    position: relative;
+  }
+  .tablet-range:nth-child(2)::before {
+    content: "";
+    width: 260px;
+    height: 2px;
+    background-color: #dddfe0;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+  }
+  .tablet-range:nth-child(2)::after {
+    content: "";
+    width: 260px;
+    height: 2px;
+    background-color: #dddfe0;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .photo-editor {
+    background-color: #ffffff;
+  }
+  .photo-editor__fast-edit {
+    width: 940px;
+    min-height: 514px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+  .custimize__photo {
+    width: 300px;
+    height: 400px;
+    background: url(../img/photo-road-desktop@1x.jpg) no-repeat;
+  }
+  .customize__filters-wrap {
+    width: 430px;
+  }
+  .customize__filters {
+    width: 430px;
+  }
+  .filters__icons {
+    width: 44px;
+  }
+  .icons__cast {
+    width: 44px;
+  }
+  .filters__range {
+    width: 288px;
+  }
+  .tablet-range:nth-child(2)::before {
+    width: 430px;
+  }
+  .tablet-range:nth-child(2)::after {
+    width: 430px;
+  }
+  .customize__send-filters {
+    width: 430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    border-top: 2px solid #dddfe0;
+  }
+  .send-yes,
+  .send-no {
+    width: 183px;
+    margin: 0px;
+  }
+
 }
 
 input[type=range] {

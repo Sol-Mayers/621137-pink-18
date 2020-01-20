@@ -1,13 +1,42 @@
 .form__main-description {
-  .ad-flex(flex; row; center; center; wrap);
-  text-align: center;
+  .ad-flex(flex; column; center; center; wrap);
+  background-color: #ffffff;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   font-weight: 300;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  color: #283645;
-  padding-left: 30px;
-  padding-right: 30px;
-  align-self: stretch;
+  margin-top: 50px;
+  color: @adColorBlue;
+  position: relative;
+  z-index: 1;
+  width: 262px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.description-desk {
+  display: none;
+}
+
+@media (min-width: @tabletWidth) {
+  .form__main-description {
+    width: 487px;
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  .form__main-description::after {
+    content: "Пожалуйста, заполните форму ниже:";
+  }
+}
+@media (min-width: @desktopWidth) {
+  .form__main-description {
+    width: 745px;
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  .form__main-description::after {
+    display: none;
+  }
+  .description-desk {
+    display: contents;
+  }
 }
