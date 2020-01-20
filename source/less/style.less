@@ -1,6 +1,6 @@
 @main-color: #ffffff;
 @main-font: 'OpenSans', sans-serif;
-@mainWidth: 320px;
+@mobileWidth: 320px;
 @main-margin: 0px auto 0px auto;
 @main-padding: 0px;
 
@@ -9,7 +9,22 @@ body {
   font-family: @main-font;
   padding: @main-padding;
   margin: @main-margin;
-  width: @mainWidth;
+  min-width: @mobileWidth;
+}
+@media (min-width: @mobileWidth) {
+  body {
+    min-width: 320px;
+  }
+}
+@media (min-width: @tabletWidth) {
+  body {
+    min-width: 660px;
+  }
+}
+@media (min-width: @desktopWidth) {
+  body {
+    min-width: 1200px;
+  }
 }
 @import "mixins";
 @import "blocks/page-header";
@@ -30,3 +45,4 @@ body {
 @import "blocks/contact__list";
 @import "blocks/system__list";
 @import "blocks/send-message__form";
+@import "blocks/back-app";

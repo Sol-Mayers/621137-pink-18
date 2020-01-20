@@ -8,12 +8,10 @@
   font-weight: 300;
   color: #283645;
   line-height: 30px;
-  width: 100%;
+  width: 320px;
 }
-.call__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
+.conacts__option {
+  width: 320px;
 }
 .tel,
 .call__academy,
@@ -23,7 +21,36 @@
   font-size: 24px;
   margin-top: 0px;
   width: 320px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+@media (min-width: @tabletWidth) {
+  .contacts__title {
+    font-size: 40px;
+    width: 380px;
+    line-height: 50px;
+  }
+  .conacts__option {
+    .ad-flex(flex; row; center; center; wrap);
+    width: 660px;
+    box-sizing: border-box;
+  }
+  .option--call {
+    margin-right: 40px;
+  }
+  .option--write {
+    margin-left: 40px;
+  }
+}
+
+.call__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .tel:hover,
 .call__academy:hover {
   color: @blue-color;
@@ -37,7 +64,7 @@
 }
 .contacts__map--marker {
   position: absolute;
-  top: 130px;
+  top: 250px;
   z-index: 1;
 }
 .contacts__map--wrap {
@@ -47,4 +74,154 @@
   justify-content: center;
   align-items: center;
 }
+.contacts {
+  position: relative;
+  min-width: 320px;
+}
+.contacts--triangle {
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  left: 0px;
+  right: 0px;
+  top: 370px;
+  background-position: bottom;
+}
+@media (min-width: @tabletWidth) {
+  .contacts--triangle {
+    top: 370px;
+  }
+}
+@media (min-width: @desktopWidth) {
+  .contacts__title {
+    font-size: 50px;
+    width: 500px;
+    line-height: 50px;
+  }
+  .conacts__option {
+    .ad-flex(flex; row; space-between; center; wrap);
+    width: 1200px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .option--call {
+    margin-right: 0px;
+  }
+  .option--write {
+    margin-left: 0px;
+    order: 3;
+  }
+  .tel,
+  .call__academy,
+  .call__adress {
+    margin-bottom: 0px;
+  }
+  .contacts--triangle {
+    top: 335px;
+  }
+  .call__title {
+    padding-bottom: 20px;
+  }
+}
 
+.page__footer-main {
+  display: none;
+}
+@media (min-width: @tabletWidth) {
+  .page__footer-main {
+    .ad-flex(flex; row; center; center; wrap);
+    min-width: 660px;
+    min-height: 127px;
+  }
+  .socialnetworks--item-tweeter {
+  fill: #d22856;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  .ad-flex(flex; row; center; center; wrap);
+}
+.socialnetworks--item-facebook {
+  fill: #d22856;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  .ad-flex(flex; row; center; center; wrap);
+}
+.socialnetworks--item-youtube {
+  fill: #d22856;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  .ad-flex(flex; row; center; center; wrap);
+}
+.links__socialnetworks-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 190px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer__links-main {
+  width: 660px;
+  .ad-flex(flex; row; space-between; center; wrap);
+}
+.links__htmlacademy-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+.htmlacademy__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+}
+.htmlacademy__icon {
+  fill: #d22856;
+  }
+.htmlacademy__icon:hover {
+  fill: @blue-color;
+  }
+.htmlacademy__icon:active {
+  fill: @blue-color;
+  opacity: 0.3;
+  }
+.socialnetworks--item-tweeter:hover,
+.socialnetworks--item-facebook:hover,
+.socialnetworks--item-youtube:hover {
+  border-color: #283645;
+  }
+.socialnetworks--item-tweeter:active,
+.socialnetworks--item-facebook:active,
+.socialnetworks--item-youtube:active {
+  border-color: #e9ebec;
+  fill: rgba(210, 40, 86, 0.3);
+  }
+.links__double--pink {
+  fill: #283645;
+  }
+.links__double:hover .links__double--pink {
+  fill: @pink-color;
+  }
+.links__double:active {
+  opacity: 0.3;
+  }
+.links__double:active .links__double--pink {
+  fill: #283645;
+  }
+}
+@media (min-width: @desktopWidth) {
+  .footer__links-main {
+  width: 936px;
+  }
+}

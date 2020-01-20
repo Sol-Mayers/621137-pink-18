@@ -32,3 +32,48 @@
 .item--text:focus {
   border-color: @pink-color;
 }
+@media (min-width: @tabletWidth) {
+  .name__list {
+    width: 616px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .name__list--item {
+    width: 616px;
+  }
+  .name__list--item-inner {
+    .ad-flex(flex; row; space-between; center; wrap);
+    margin-bottom: 56px;
+  }
+  .surname {
+    width: 521px;
+  }
+  .name {
+    width: 561px;
+  }
+  .thrdname {
+    width: 521px;
+  }
+  .item--surname,
+  .item--name,
+  .item--thirdname {
+    margin-left: 0px;
+  }
+}
+@media (min-width: @desktopWidth) {
+  .name__list {
+    display: none;
+  }
+  .surname {
+    width: 336px;
+  }
+  .name {
+    width: 376px;
+  }
+  .thrdname {
+    width: 336px;
+  }
+  .name__list--item {
+    width: 432px;
+  }
+}

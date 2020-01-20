@@ -5,8 +5,11 @@
 .contact__list {
   width: @width;
   .ad-flex(flex; column; center; center; wrap);
-  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
 }
+
 .item-number,
 .item-mail {
   color: @pink-color;
@@ -34,4 +37,69 @@
 .number--box:focus,
 .mail--box:focus {
   border-color: @pink-color;
+}
+
+@media (min-width: @tabletWidth) {
+  .contact__list {
+    width: 616px;
+    box-sizing: border-box;
+    padding: 47px 60px 25px 60px;
+    position: relative;
+    margin-bottom: 70px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+  .contact__list::before {
+    content: "Контактная информация";
+    color: @pink-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    top: -15px;
+    background-color: #ffffff;
+    width: 260px;
+    text-align: center;
+
+  }
+  .contact__list--item-inner {
+    .ad-flex(flex; column-reverse; center; flex-start; wrap);
+  }
+  .contact__list--item {
+    width: 496px;
+  }
+  .number--box,
+  .mail--box {
+    width: 496px;
+  }
+  .item-number,
+  .item-mail {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: @desktopWidth) {
+  .contact__list {
+  width: 936px;
+  .ad-flex(flex; row; space-between; center; wrap);
+  }
+  .contact__list--item {
+    width: 371px;
+  }
+  .number--box,
+  .mail--box {
+    width: 371px;
+  }
+  .contact__list::before {
+    content: "Контактная информация";
+    color: @pink-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    top: -15px;
+    background-color: #ffffff;
+    width: 260px;
+    left: 338px;
+  }
 }
