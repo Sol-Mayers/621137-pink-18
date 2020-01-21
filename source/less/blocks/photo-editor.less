@@ -11,12 +11,13 @@
 
 @media (min-width: @tabletWidth) {
   .photo-editor__fast-edit {
-  width: 660px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
+    width: 660px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
 }
+
 .filters__icons {
   display: flex;
   flex-direction: row;
@@ -27,6 +28,7 @@
   padding-left: 38px;
   padding-right: 38px;
 }
+
 @media (min-width: @tabletWidth) {
   .filters__icons {
     flex-direction: column;
@@ -35,6 +37,7 @@
     height: 200px;
   }
 }
+
 .filters__range {
   display: flex;
   flex-direction: row;
@@ -42,6 +45,7 @@
   margin-top: 20px;
   width: 240px;
 }
+
 .customize__filters {
   display: flex;
   flex-direction: column;
@@ -51,12 +55,15 @@
   width: 280px;
   padding-bottom: 35px;
 }
+
 .range-style {
   width: 240px;
 }
+
 .customize__send-filters {
   display: none;
 }
+
 .customize__send {
   width: 280px;
   display: flex;
@@ -66,6 +73,7 @@
   padding-top: 35px;
   border-top: 2px solid #dddfe0;
 }
+
 .send-yes {
   display: flex;
   flex-direction: row;
@@ -79,14 +87,18 @@
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 12px;
+  cursor: pointer;
 }
+
 .send-yes:hover {
   color: #ffffff;
   background-color: @pink-color;
 }
+
 .send-yes:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
 .send-no {
   display: flex;
   flex-direction: row;
@@ -100,22 +112,28 @@
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 41px;
+  cursor: pointer;
 }
+
 .send-no:hover {
   border-color: #b5b9be;
   color: #b5b9be;
 }
+
 .send-no:active {
   background-color: #8d949b;
   color: #cbced2;
   border-color: #8d949b;
 }
+
 .icons__cast {
   fill: #b5b9be;
 }
+
 .icons__cast:hover {
   fill: #8d949b;
 }
+
 .icons__cast:active {
   fill: @pink-color;
 }
@@ -125,9 +143,11 @@
     width: 24px;
     fill: @pink-color;
   }
+
   .customize__send {
     display: none;
   }
+
   .customize__send-filters {
     width: 260px;
     display: flex;
@@ -137,6 +157,7 @@
     padding-top: 35px;
     border-top: 2px solid #dddfe0;
   }
+
   .send-yes,
   .send-no {
     width: 260px;
@@ -148,27 +169,44 @@
   height: 374px;
   background: url(../img/photo-road-mobile@1x.jpg) no-repeat;
 }
+@media (min-resolution: @retina-dppx) {
+  .custimize__photo {
+    background: url(../img/photo-road-mobile@2x.jpg) no-repeat;
+    background-size: contain;
+  }
+}
 .tablet-range {
   display: none;
 }
+
 @media (min-width: @tabletWidth) {
   .custimize__photo {
     width: 300px;
     height: 400px;
     background: url(../img/photo-road-tablet@1x.jpg) no-repeat;
   }
+  @media (min-resolution: @retina-dppx) {
+  .custimize__photo {
+    background: url(../img/photo-road-tablet@2x.jpg) no-repeat;
+    background-size: contain;
+  }
+}
+
   .fast-edit--customize {
     .ad-flex(flex; row; space-between; center; wrap);
   }
+
   .customize__filters {
     width: 260px;
     flex-direction: row;
   }
+
   .filters__range {
     .ad-flex(flex; row; center; center; wrap);
     width: 202px;
     margin-top: 0px;
   }
+
   .filters__range-wrap {
     .ad-flex(flex; column; space-between; center; wrap);
     height: 200px;
@@ -176,9 +214,11 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   .tablet-range:nth-child(2) {
     position: relative;
   }
+
   .tablet-range:nth-child(2)::before {
     content: "";
     width: 260px;
@@ -188,6 +228,7 @@
     bottom: 40px;
     right: 0px;
   }
+
   .tablet-range:nth-child(2)::after {
     content: "";
     width: 260px;
@@ -203,6 +244,7 @@
   .photo-editor {
     background-color: #ffffff;
   }
+
   .photo-editor__fast-edit {
     width: 940px;
     min-height: 514px;
@@ -213,32 +255,47 @@
     box-sizing: border-box;
     background-color: #f2f2f2;
   }
+
   .custimize__photo {
     width: 300px;
     height: 400px;
     background: url(../img/photo-road-desktop@1x.jpg) no-repeat;
   }
+  @media (min-resolution: @retina-dppx) {
+  .custimize__photo {
+    background: url(../img/photo-road-desktop@2x.jpg) no-repeat;
+    background-size: contain;
+  }
+}
+
   .customize__filters-wrap {
     width: 430px;
   }
+
   .customize__filters {
     width: 430px;
   }
+
   .filters__icons {
     width: 44px;
   }
+
   .icons__cast {
     width: 44px;
   }
+
   .filters__range {
     width: 288px;
   }
+
   .tablet-range:nth-child(2)::before {
     width: 430px;
   }
+
   .tablet-range:nth-child(2)::after {
     width: 430px;
   }
+
   .customize__send-filters {
     width: 430px;
     display: flex;
@@ -248,12 +305,12 @@
     padding-top: 70px;
     border-top: 2px solid #dddfe0;
   }
+
   .send-yes,
   .send-no {
     width: 183px;
     margin: 0px;
   }
-
 }
 
 input[type=range] {
@@ -285,12 +342,13 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
   background-color: #f2f2f2;
   cursor: pointer;
-  margin-top: -7px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+  margin-top: -7px;
 }
+
 input[type=range]:active::-webkit-slider-thumb {
   background-color: @pink-color;
 }
-/* Тоже самое для Firefox */
+
 input[type=range]::-moz-range-thumb {
   border: 2px solid @pink-color;
   height: 15px;
@@ -299,10 +357,11 @@ input[type=range]::-moz-range-thumb {
   background-color: #f2f2f2;
   cursor: pointer;
 }
+
 input[type=range]:active::-moz-range-thumb {
   background-color: @pink-color;
 }
-/* Тоже самое для IE */
+
 input[type=range]::-ms-thumb {
   border: 2px solid @pink-color;
   height: 15px;
@@ -311,9 +370,11 @@ input[type=range]::-ms-thumb {
   background-color: #f2f2f2;
   cursor: pointer;
 }
+
 input[type=range]:active::-ms-thumb {
   background-color: @pink-color;
 }
+
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
@@ -345,19 +406,23 @@ input[type=range]::-ms-track {
   border-width: 16px 0;
   color: transparent;
 }
+
 input[type=range]::-ms-fill-lower {
   background: #283645;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
 }
+
 input[type=range]:focus::-ms-fill-lower {
   background: #283645;
 }
+
 input[type=range]::-ms-fill-upper {
   background: #283645;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
 }
+
 input[type=range]:focus::-ms-fill-upper {
   background: #283645;
 }

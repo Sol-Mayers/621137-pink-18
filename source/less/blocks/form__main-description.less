@@ -13,6 +13,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .description-desk {
   display: none;
 }
@@ -23,19 +24,23 @@
     font-size: 18px;
     margin-top: 100px;
   }
+
   .form__main-description::after {
     content: "Пожалуйста, заполните форму ниже:";
   }
 }
+
 @media (min-width: @desktopWidth) {
   .form__main-description {
     width: 745px;
     font-size: 18px;
     margin-top: 100px;
   }
+
   .form__main-description::after {
     display: none;
   }
+
   .description-desk {
     display: contents;
   }

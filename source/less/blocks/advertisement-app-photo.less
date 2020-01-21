@@ -7,9 +7,11 @@
   margin-bottom: 20px;
   align-self: stretch;
 }
+
 .advertisement-app__comments {
   min-width: 320px;
 }
+
 .comments__item {
   display: flex;
   flex-direction: column;
@@ -20,6 +22,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .comments__item-main {
   display: flex;
   flex-direction: column;
@@ -31,17 +34,21 @@
   margin-right: auto;
   box-sizing: border-box;
 }
+
 .comments__item--panorama {
   position: relative;
   width: 320px;
   height: 137px;
   background: url(../img/panorama-mobile@1x.jpg) no-repeat;
 }
+
 @media (min-resolution: @retina-dppx) {
-    .comments__item--panorama {
+  .comments__item--panorama {
     background: url(../img/panorama-mobile@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
 .comments__item--panorama::after {
   content: "панорама дня";
   width: 140px;
@@ -56,6 +63,7 @@
   font-size: 12px;
   font-weight: bold;
 }
+
 .comments__item--text {
   display: flex;
   flex-direction: column;
@@ -66,6 +74,7 @@
   box-sizing: border-box;
   padding: 20px;
 }
+
 .comments__item--panorama-text {
   display: flex;
   flex-direction: column;
@@ -76,22 +85,26 @@
   box-sizing: border-box;
   padding: 20px;
 }
+
 .advertisement-app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #283645;
 }
+
 .text__user {
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
 }
+
 .text__description {
   margin-top: 0px;
   font-size: 14px;
   line-height: 24px;
 }
+
 .text__ilikeit {
   color: #d22856;
   text-transform: uppercase;
@@ -99,70 +112,91 @@
   line-height: 24px;
   margin-top: 0px;
 }
+
 .heart {
   fill: #d22856;
   margin-right: 15px;
 }
+
 .comments__item--photo1 {
   .width-height(280px; 180px);
   background: url(../img/photo-car-mobile@1x.jpg);
 }
+
 @media (min-resolution: @retina-dppx) {
-    .comments__item--photo1 {
+  .comments__item--photo1 {
     background: url(../img/photo-car-mobile@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
 .comments__item--photo2 {
   .width-height(280px; 180px);
   background: url(../img/photo-drumset-mobile@1x.jpg);
 }
+
 @media (min-resolution: @retina-dppx) {
-    .comments__item--photo2 {
+  .comments__item--photo2 {
     background: url(../img/photo-drumset-mobile@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
 .comments__item--photo3 {
   .width-height(280px; 180px);
   background: url(../img/photo-window-mobile@1x.jpg);
 }
+
 @media (min-resolution: @retina-dppx) {
-    .comments__item--photo3 {
+  .comments__item--photo3 {
     background: url(../img/photo-window-mobile@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
 .comments__item--photo4 {
   .width-height(280px; 180px);
   background: url(../img/photo-fair-mobile@1x.jpg);
 }
+
 @media (min-resolution: @retina-dppx) {
-    .comments__item--photo4 {
+  .comments__item--photo4 {
     background: url(../img/photo-fair-mobile@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
 .comments__item--photo5 {
   .width-height(280px; 180px);
   background: url(../img/photo-pov-mobile@1x.jpg);
 }
+
 @media (min-resolution: @retina-dppx) {
-    .comments__item--photo5 {
+  .comments__item--photo5 {
     background: url(../img/photo-pov-mobile@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
 .comments__item--photo6 {
   .width-height(280px; 180px);
   background: url(../img/photo-wing-mobile@1x.jpg);
 }
+
 @media (min-resolution: @retina-dppx) {
-    .comments__item--photo6 {
+  .comments__item--photo6 {
     background: url(../img/photo-wing-mobile@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
 .user__time {
   font-weight: 300;
   text-transform: uppercase;
   color: #283645;
   font-size: 12px;
 }
+
 .adv__description {
   text-align: center;
   font-size: 14px;
@@ -176,6 +210,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .slogans__item--photo {
   width: 241px;
 }
@@ -185,9 +220,11 @@
     width: 436px;
     font-size: 18px;
   }
+
   .comments__item {
     width: 660px;
   }
+
   .comments__item--panorama {
     width: 660px;
     height: 509px;
@@ -195,149 +232,186 @@
   }
   @media (min-resolution: @retina-dppx) {
     .comments__item--panorama {
-    background: url(../img/panorama-tablet@2x.jpg);
-    }
+      background: url(../img/panorama-tablet@2x.jpg);
+      background-size: contain;
+  }
 }
-  .comments__item--panorama-text {
-    width: 620px;
-    height: 121px;
-    position: relative;
-  }
-  .text__user {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  .text__description {
-    order: 2;
-    margin-bottom: 0px;
-    padding-bottom: 8px;
-  }
-  .text__like {
-    .ad-flex(flex; row; center; center; wrap);
-    align-self: flex-end;
-  }
-  .text__like::after {
-    width: 13px;
-    height: 12px;
-    content: "";
-    background: url(../img/icon-heart.svg) no-repeat;
-    background-position: center;
-    margin-left: 17px;
-  }
-  .heart {
-    display: none;
-  }
-  .text__ilikeit {
-    margin-bottom: 0px;
-  }
-  .main-photo__wrap {
-    .ad-flex(flex; row; space-between; center; wrap);
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
-  .comments__item-main {
-    width: 300px;
-    height: 455px;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
-  .comments__item--photo1 {
-    .width-height(300px; 300px);
+
+.comments__item--panorama-text {
+  width: 620px;
+  height: 121px;
+  position: relative;
+}
+
+.text__user {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.text__description {
+  order: 2;
+  margin-bottom: 0px;
+  padding-bottom: 8px;
+}
+
+.text__like {
+  .ad-flex(flex; row; center; center; wrap);
+  align-self: flex-end;
+}
+
+.text__like::after {
+  width: 13px;
+  height: 12px;
+  content: "";
+  background: url(../img/icon-heart.svg) no-repeat;
+  background-position: center;
+  margin-left: 17px;
+}
+
+.heart {
+  display: none;
+}
+
+.text__ilikeit {
+  margin-bottom: 0px;
+}
+
+.main-photo__wrap {
+  .ad-flex(flex; row; space-between; center; wrap);
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.comments__item-main {
+  width: 300px;
+  height: 455px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.comments__item--photo1 {
+  .width-height(300px; 300px);
     background: url(../img/photo-car-tablet@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo1 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo1 {
     background: url(../img/photo-car-tablet@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo2 {
-    .width-height(300px; 300px);
+
+.comments__item--photo2 {
+  .width-height(300px; 300px);
     background: url(../img/photo-drumset-tablet@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo2 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo2 {
     background: url(../img/photo-drumset-tablet@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo3 {
-    .width-height(300px; 300px);
+
+.comments__item--photo3 {
+  .width-height(300px; 300px);
     background: url(../img/photo-window-tablet@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo3 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo3 {
     background: url(../img/photo-window-tablet@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo4 {
-    .width-height(300px; 300px);
+
+.comments__item--photo4 {
+  .width-height(300px; 300px);
     background: url(../img/photo-fair-tablet@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo4 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo4 {
     background: url(../img/photo-fair-tablet@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo5 {
-    .width-height(300px; 300px);
+
+.comments__item--photo5 {
+  .width-height(300px; 300px);
     background: url(../img/photo-pov-tablet@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo5 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo5 {
     background: url(../img/photo-pov-tablet@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo6 {
-    .width-height(300px; 300px);
+
+.comments__item--photo6 {
+  .width-height(300px; 300px);
     background: url(../img/photo-wing-tablet@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo6 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo6 {
     background: url(../img/photo-wing-tablet@2x.jpg);
-    }
-}
-  .comments__item--text {
-    height: 155px;
-    width: 300px;
-    position: relative;
-    justify-content: space-between;
-  }
-  .main-text {
-    order: 2;
-    align-self: flex-start;
-    box-sizing: border-box;
-  }
-  .main-text::after {
-    width: 13px;
-    height: 12px;
-    content: "";
-    background: url(../img/icon-heart.svg) no-repeat;
-    background-position: center;
-    margin-left: 140px;
-  }
-  .main-description {
-    margin-top: 25px;
-  }
-  .adv__description {
-    width: 418px;
-    font-size: 18px;
-  }
-  .comments__item--panorama::after {
-    top: 57px;
-    left: 500px;
+    background-size: contain;
   }
 }
+
+.comments__item--text {
+  height: 155px;
+  width: 300px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.main-text {
+  order: 2;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+
+.main-text::after {
+  width: 13px;
+  height: 12px;
+  content: "";
+  background: url(../img/icon-heart.svg) no-repeat;
+  background-position: center;
+  margin-left: 140px;
+}
+
+.main-description {
+  margin-top: 25px;
+}
+
+.adv__description {
+  width: 418px;
+  font-size: 18px;
+}
+
+.comments__item--panorama::after {
+  top: 57px;
+  left: 500px;
+}
+}
+
 @media (min-width: @desktopWidth) {
   .slogans__item--photo {
     width: 568px;
   }
+
   .comments__item {
     width: 1200px;
   }
+
   .comments__item--panorama {
     width: 1200px;
     height: 506px;
@@ -346,100 +420,126 @@
   @media (min-resolution: @retina-dppx) {
     .comments__item--panorama {
     background: url(../img/panorama-desktop@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--panorama-text {
-    width: 940px;
-    height: 96px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .text__user {
-    left: 30px;
-  }
-  .main-photo__wrap {
-    .ad-flex(flex; row; space-between; center; wrap);
+
+.comments__item--panorama-text {
+  width: 940px;
+  height: 96px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text__user {
+  left: 30px;
+}
+
+.main-photo__wrap {
+  .ad-flex(flex; row; space-between; center; wrap);
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 130px;
-    padding-right: 130px;
-    box-sizing: border-box;
-    margin-top: 50px;
-  }
-  .comments__item-main {
-    width: 300px;
-    height: 555px;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 130px;
+  padding-right: 130px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.comments__item-main {
+  width: 300px;
+  height: 555px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.comments__item--photo1 {
+  .width-height(300px; 400px);
+  background: url(../img/photo-car-desktop@1x.jpg);
+}
+
+@media (min-resolution: @retina-dppx) {
   .comments__item--photo1 {
-    .width-height(300px; 400px);
-    background: url(../img/photo-car-desktop@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo1 {
     background: url(../img/photo-car-desktop@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo2 {
-    .width-height(300px; 400px);
+
+.comments__item--photo2 {
+  .width-height(300px; 400px);
     background: url(../img/photo-drumset-desktop@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo2 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo2 {
     background: url(../img/photo-drumset-desktop@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo3 {
-    .width-height(300px; 400px);
+
+.comments__item--photo3 {
+  .width-height(300px; 400px);
     background: url(../img/photo-window-desktop@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo3 {
+}
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo3 {
     background: url(../img/photo-window-desktop@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
+.comments__item--photo4 {
+  .width-height(300px; 400px);
+  background: url(../img/photo-fair-desktop@1x.jpg);
+}
+
+@media (min-resolution: @retina-dppx) {
   .comments__item--photo4 {
-    .width-height(300px; 400px);
-    background: url(../img/photo-fair-desktop@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo4 {
     background: url(../img/photo-fair-desktop@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
+
+.comments__item--photo5 {
+  .width-height(300px; 400px);
+  background: url(../img/photo-pov-desktop@1x.jpg);
+}
+
+@media (min-resolution: @retina-dppx) {
   .comments__item--photo5 {
-    .width-height(300px; 400px);
-    background: url(../img/photo-pov-desktop@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo5 {
     background: url(../img/photo-pov-desktop@2x.jpg);
-    }
+    background-size: contain;
+  }
 }
-  .comments__item--photo6 {
-    .width-height(300px; 400px);
+
+.comments__item--photo6 {
+  .width-height(300px; 400px);
     background: url(../img/photo-wing-desktop@1x.jpg);
-  }
-  @media (min-resolution: @retina-dppx) {
-    .comments__item--photo6 {
-    background: url(../img/photo-wing-desktop@2x.jpg);
-    }
 }
-  .main-description {
-    box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    width: 260px;
+
+@media (min-resolution: @retina-dppx) {
+  .comments__item--photo6 {
+    background: url(../img/photo-wing-desktop@2x.jpg);
+    background-size: contain;
   }
-  .main-text {
-    width: 260px;
-    box-sizing: border-box;
-  }
-  .comments__item--panorama::after {
-    top: 57px;
-    left: 930px;
-  }
+}
+
+.main-description {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  width: 260px;
+}
+
+.main-text {
+  width: 260px;
+  box-sizing: border-box;
+}
+
+.comments__item--panorama::after {
+  top: 57px;
+  left: 930px;
+}
 }

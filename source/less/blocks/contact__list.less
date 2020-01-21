@@ -1,5 +1,7 @@
 @pink-color: #d22856;
+
 @blue-color: #283645;
+
 @width: 276px;
 
 .contact__list {
@@ -19,6 +21,7 @@
   margin-bottom: 2px;
   margin-left: 20px;
 }
+
 .number--box,
 .mail--box {
   height: 59px;
@@ -30,10 +33,12 @@
   border: 2px solid #e5e5e5;
   border-radius: 3px;
 }
+
 .number--box:hover,
 .mail--box:hover {
   border-color: @blue-color;
 }
+
 .number--box:focus,
 .mail--box:focus {
   border-color: @pink-color;
@@ -49,6 +54,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 3px;
   }
+
   .contact__list::before {
     content: "Контактная информация";
     color: @pink-color;
@@ -60,36 +66,43 @@
     background-color: #ffffff;
     width: 260px;
     text-align: center;
-
   }
+
   .contact__list--item-inner {
     .ad-flex(flex; column-reverse; center; flex-start; wrap);
   }
+
   .contact__list--item {
     width: 496px;
   }
+
   .number--box,
   .mail--box {
     width: 496px;
   }
+
   .item-number,
   .item-mail {
     margin-top: 5px;
     margin-bottom: 20px;
   }
 }
+
 @media (min-width: @desktopWidth) {
   .contact__list {
-  width: 936px;
-  .ad-flex(flex; row; space-between; center; wrap);
+    width: 936px;
+    .ad-flex(flex; row; space-between; center; wrap);
   }
+
   .contact__list--item {
     width: 371px;
   }
+
   .number--box,
   .mail--box {
     width: 371px;
   }
+
   .contact__list::before {
     content: "Контактная информация";
     color: @pink-color;

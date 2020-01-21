@@ -1,7 +1,11 @@
 @main-color: #ffffff;
-@main-font: 'OpenSans', sans-serif;
+
+@main-font: 'OpenSans', 'Arial', sans-serif;
+
 @mobileWidth: 320px;
+
 @main-margin: 0px auto 0px auto;
+
 @main-padding: 0px;
 
 body {
@@ -11,38 +15,64 @@ body {
   margin: @main-margin;
   min-width: @mobileWidth;
 }
+html {
+  overflow-x: hidden;
+}
+
 @media (min-width: @mobileWidth) {
   body {
     min-width: 320px;
   }
 }
+
 @media (min-width: @tabletWidth) {
   body {
     min-width: 660px;
   }
 }
+
 @media (min-width: @desktopWidth) {
   body {
     min-width: 1200px;
   }
 }
+
 @import "mixins";
+
 @import "blocks/page-header";
+
 @import "blocks/main-background";
+
 @import "blocks/about-app";
+
 @import "blocks/advertisement-app";
+
 @import "blocks/price-menu";
+
 @import "blocks/page-footer";
+
 @import "blocks/page-main-photo";
+
 @import "blocks/main-background__photo--small";
+
 @import "blocks/advertisement-app-photo";
+
 @import "blocks/photo-editor";
+
 @import "blocks/page__footer";
+
 @import "blocks/form__main-description";
+
 @import "blocks/about-me";
+
 @import "blocks/name__list";
+
 @import "blocks/achievement__list";
+
 @import "blocks/contact__list";
+
 @import "blocks/system__list";
+
 @import "blocks/send-message__form";
+
 @import "blocks/back-app";

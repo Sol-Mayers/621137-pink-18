@@ -8,6 +8,7 @@
   background-color: #f2f2f2;
   background-size: contain;
 }
+
 .slider-price {
   padding-top: 60px;
   width: 320px;
@@ -16,9 +17,11 @@
   z-index: 1;
   overflow: hidden;
 }
+
 .slider__inner--price {
   overflow: hidden;
 }
+
 .pink-filter,
 .smiles,
 .comments {
@@ -27,6 +30,7 @@
   padding: 12px 22px 12px 22px;
   .ad-flex(flex; row; space-between; center; wrap);
 }
+
 .pink-filter-hit {
   list-style: none;
   outline: 2px solid @greyColour;
@@ -34,6 +38,7 @@
   .ad-flex(flex; row; space-between; center; wrap);
   height: 31px;
 }
+
 .price-title {
   text-align: center;
   background-color: #283645;
@@ -60,6 +65,7 @@
   position: relative;
   height: 60px;
 }
+
 .hit {
   position: absolute;
   left: 11px;
@@ -68,11 +74,13 @@
   font-weight: normal;
   font-size: 15px;
 }
+
 .cost {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
 }
+
 .price--1,
 .price--2,
 .price--3 {
@@ -90,43 +98,40 @@
 }
 
 .standart-pink {
-
   fill: #3dc644;
 }
+
 .standart-comments {
-
   fill: #f25b26;
 }
+
 .standart-smiles {
-
   fill: #3dc644;
 }
+
 .base-pink {
-
   fill: #3dc644;
 }
+
 .base-comments {
-
   fill: #f25b26;
 }
+
 .base-smiles {
-
   fill: #f25b26;
 }
+
 .unlim-pink {
-
   fill: #3dc644;
 }
+
 .unlim-comments {
-
   fill: #3dc644;
 }
+
 .unlim-smiles {
-
   fill: #3dc644;
 }
-
-
 
 .slider-2 {
   position: relative;
@@ -136,7 +141,6 @@
 .slider-2 input[type="radio"] {
   display: none;
 }
-
 
 .inner__slides--price {
   width: 300%;
@@ -175,7 +179,6 @@
   background-color: transparent;
 }
 
-
 #slide-1:checked ~ .slider__inner--price .inner__slides--price {
   transform: translate(20px);
 }
@@ -187,23 +190,28 @@
 #slide-3:checked ~ .slider__inner--price .inner__slides--price {
   transform: translate(-528px);
 }
+
 .price--tablet-show {
   display: none;
 }
+
 @media (min-width: @tabletWidth) {
   .slider-price {
     width: 660px;
   }
+
   .inner__slides--price .price--1,
   .inner__slides--price .price--2,
   .inner__slides--price .price--3 {
     width: 153px;
   }
+
   .pink-filter--cast,
   .smiles--cast,
   .comments--cast {
     display: none;
   }
+
   .pink-filter,
   .smiles,
   .comments,
@@ -212,12 +220,14 @@
     height: 45px;
     padding: 0px;
   }
+
   .price--tablet-show {
     .ad-flex(flex; column; center; center; wrap);
     background-color: #ffffff;
     width: 153px;
     padding-bottom: 1px;
   }
+
   .tablet-show--item {
     outline: 2px solid @greyColour;
     width: 153px;
@@ -228,29 +238,34 @@
     box-sizing: border-box;
     padding-left: 15px;
   }
+
   .inner__slides--price {
     .ad-flex(flex; row; center; flex-end; wrap);
     width: 100%;
     transition: none;
     margin-bottom: 80px;
   }
+
   #slide-1:checked ~ .slider__inner--price .inner__slides--price {
     transform: translate(0px);
- }
+  }
 
   #slide-2:checked ~ .slider__inner--price .inner__slides--price {
     transform: translate(0px);
- }
+  }
 
   #slide-3:checked ~ .slider__inner--price .inner__slides--price {
     transform: translate(0px);
- }
+  }
+
   .slider__controls--price {
     display: none;
   }
+
   .price__option {
     margin-bottom: 0px;
   }
+
   .price-title,
   .price-title-hit {
     height: 60px;
@@ -258,51 +273,63 @@
     padding-bottom: 13px;
     font-size: 16px;
   }
+
   .price-title-hit {
     height: 58.5px;
   }
+
   .slide-description--pricehit {
     border-right: 1px solid @greyColour;
   }
+
   .pink-filter-hit {
     border-top: 1.5px solid #ffffff;
   }
+
   .cost {
     font-size: 18px;
   }
 }
+
 @media (min-width: @desktopWidth) {
   .slider-price {
     width: 1000px;
     padding-top: 150px;
   }
+
   .inner__slides--price .price--1,
   .inner__slides--price .price--2,
   .inner__slides--price .price--3 {
     width: 234px;
   }
+
   .price--tablet-show {
     width: 234px;
   }
+
   .tablet-show--item {
     width: 234px;
     height: 59px;
     font-size: 18px;
   }
+
   .pink-filter,
   .smiles,
   .comments,
   .pink-filter-hit {
     height: 59px;
   }
+
   .price-title,
   .price-title-hit {
     height: 94px;
     font-size: 18px;
   }
+
   .price-title-hit {
     height: 93px;
   }
+
   .cost {
     font-size: 24px;
   }

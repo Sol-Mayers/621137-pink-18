@@ -1,4 +1,5 @@
 @appBackground: #1d2631;
+
 @appTextColor: #ffffff;
 
 .about-app {
@@ -6,6 +7,7 @@
   color: @appTextColor;
   .ad-flex(flex; column; center; center; wrap);
 }
+
 .about-app__download {
   width: 281px;
   height: 55px;
@@ -19,38 +21,47 @@
   color: @headerColorText;
   text-decoration: none;
 }
+
 .about-app__download:hover {
   background-color: @headerColorText;
   color: @pink-color;
 }
+
 .about-app__download:active {
   color: rgba(210, 40, 86, 0.3);
 }
+
 .download__menu {
   width: 232px;
 }
+
 .download__menu {
   .ad-flex(flex; column; center; center; wrap);
 }
+
 .download__menu-icons {
   .ad-flex(flex; row; center; center; wrap);
   margin-bottom: 25px;
 }
+
 .download__menu--apple {
   width: 60px;
   height: 60px;
   background: url(../img/logo-apple.svg) no-repeat center;
 }
+
 .download__menu--android {
   width: 60px;
   height: 60px;
   background: url(../img/logo-android.svg) no-repeat center;
 }
+
 .download__menu--windows {
   width: 60px;
   height: 60px;
   background: url(../img/logo-microsoft.svg) no-repeat center;
 }
+
 .download__menu--description {
   .ad-flex(flex; row; center; center; wrap);
   font-size: 14px;
