@@ -1,4 +1,5 @@
 @adColorBlue: #283645;
+
 @adColorBlack: #000000;
 
 .advertisement-app__slogans {
@@ -15,79 +16,96 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .item__logo-iphone {
   display: none;
 }
+
 .slogans__item--desktop {
   display: none;
 }
+
 .slogans__item {
   margin-top: 0px;
   margin-bottom: 15px;
   width: 100%;
 }
+
 .slogans__item--bottom {
   margin-top: 0px;
   margin-bottom: 20px;
   width: 100%;
 }
+
 .advantages__item {
   width: 320px;
+  box-sizing: border-box;
+  padding-left: 34px;
+  padding-right: 34px;
 }
+
 @media (min-width: @tabletWidth) {
   .advertisement-app__slogans {
     font-size: 40px;
     width: 660px;
   }
+
   .slogans__item--desktop {
     display: flex;
     margin-top: 0px;
   }
+
   .slogans__item--bottom {
     display: none;
   }
+
   .slogans__item {
     margin-bottom: 0px;
   }
 }
+
 @media (min-width: @desktopWidth) {
   .advertisement-app__slogans {
     font-size: 50px;
     width: 1200px;
   }
+
   .item__logo-iphone {
-  display: flex;
- }
+    display: flex;
+  }
 }
 
 @media (min-width: @desktopWidth) {
   .slogans__item--bottom {
     display: none;
   }
+
   .slogans__item--desktop {
     display: flex;
     margin-top: 0px;
   }
+
   .slogans__item {
     margin-bottom: 0px;
   }
 }
+
 .advertisement-app__advantages {
   .ad-flex(flex; column; center; center; wrap);
   text-align: center;
   color: @adColorBlack;
-  padding-left: 34px;
-  padding-right: 34px;
   padding-top: 50px;
   background: url(../img/bg-triangle-white.svg) no-repeat;
   background-color: #f2f2f2;
   background-size: contain;
 }
+
 @media (min-width: @tabletWidth) {
   .advertisement-app__advantages {
     .ad-flex(flex; row-reverse; center; center; wrap);
     padding-top: 0px;
   }
+
   .advantages__wrap {
     width: 306px;
     text-align: start;
@@ -95,14 +113,17 @@
     padding-left: 10px;
     margin-left: 10px;
   }
+
   .advantages__item {
     width: 306px;
   }
 }
+
 @media (min-width: @desktopWidth) {
   .advertisement-app__advantages {
     .ad-flex(flex; row-reverse; center; center; wrap);
   }
+
   .advantages__wrap {
     .ad-flex(flex; row; space-between; center; wrap);
     box-sizing: border-box;
@@ -119,14 +140,17 @@
     width: 292px;
     text-align: center;
   }
+
   .item__text-br {
     display: none;
   }
 }
+
 .item__title {
   font-size: 18px;
   line-height: 24px;
 }
+
 @media (min-width: @desktopWidth) {
   .item__title {
     font-size: 30px;
@@ -134,10 +158,12 @@
     width: 220px;
   }
 }
+
 .item__text {
   font-size: 14px;
   line-height: 24px;
 }
+
 @media (min-width: @desktopWidth) {
   .item__text {
     font-size: 18px;
@@ -146,15 +172,18 @@
     width: 236px;
   }
 }
+
 .advantages__mobile {
   .width-height(157px; 320px);
   background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
   margin-top: 25px;
 }
+
 @media (min-resolution: @retina-dppx) {
-    .advantages__mobile {
+  .advantages__mobile {
     background: url(../img/iphone-screen-mobile@2x.png);
-    }
+    background-size: contain;
+  }
 }
 
 @media (min-width: @tabletWidth) {
@@ -166,15 +195,18 @@
   }
   @media (min-resolution: @retina-dppx) {
     .advantages__mobile {
-    background: url(../img/iphone-screen-3-tablet@2x.png);
-    }
+      background: url(../img/iphone-screen-3-tablet@2x.png);
+      background-size: contain;
+  }
 }
 }
+
 @media (min-width: @desktopWidth) {
   .advantages__mobile {
     display: none;
   }
 }
+
 .advantages__profit {
   display: none;
   margin-top: 60px;
@@ -184,11 +216,13 @@
   padding-left: 22px;
   padding-right: 22px;
 }
+
 @media (min-width: @tabletWidth) {
   .advantages__profit {
     .ad-flex(flex; row; space-between; center; wrap);
   }
 }
+
 @media (min-width: @desktopWidth) {
   .advantages__profit {
     width: 1200px;
@@ -201,44 +235,55 @@
     height: 500px;
   }
 }
+
 .advantages__profit-text {
   width: 290px;
   text-align: left;
 }
+
 .profit-text--title {
   font-size: 30px;
   line-height: 36px;
 }
+
 .profit-text--description {
   font-size: 14px;
   line-height: 24px;
   color: #283645;
 }
+
 .profit-text--description-b1 {
   display: none;
 }
+
 @media (min-width: @desktopWidth) {
   .advantages__profit-text {
     width: 525px;
     margin-right: 40px;
   }
+
   .profit-text--title-b {
     display: none;
   }
+
   .profit-text--description {
     font-size: 18px;
     width: 520px;
   }
+
   .profit-text--description-b {
     display: flex;
   }
+
   .profit-text--description-b1 {
     display: none;
   }
+
   .profit-text--link {
     font-size: 18px;
   }
 }
+
 .advantages__profit-logo {
   width: 238px;
   height: 276px;
@@ -246,6 +291,7 @@
   background-size: contain;
   position: relative;
 }
+
 .advantages__profit-logo::before {
   content: "";
   width: 160px;
@@ -257,6 +303,7 @@
   top: 61px;
   left: 23px;
 }
+
 .advantages__profit-logo::after {
   content: "24";
   position: absolute;
@@ -266,12 +313,14 @@
   color: #d22856;
   font-weight: bold;
 }
+
 @media (min-width: @desktopWidth) {
   .advantages__profit-logo {
     transform: scale(1.2);
     margin-left: 30px;
   }
 }
+
 .profit-text--link {
   color: #d22856;
 }
@@ -281,6 +330,7 @@
   flex-direction: row;
   justify-content: center;
 }
+
 .description--title {
   font-size: 18px;
   line-height: 30px;
@@ -290,25 +340,29 @@
   font-size: 14px;
   line-height: 30px;
 }
+
 @media (min-width: @desktopWidth) {
   .description--text {
-    font-size: 18px;;
+    font-size: 18px;
+    ;
   }
 }
-
 
 .slider {
   position: relative;
   .ad-flex(flex; column-reverse; center; center; wrap);
 }
+
 .slider--quotes {
-    display: none;
-  }
+  display: none;
+}
+
 @media (min-width: @desktopWidth) {
   .slider {
     background-color: #ffffff;
     padding-top: 72px;
   }
+
   .slider--quotes {
     display: flex;
   }
@@ -316,8 +370,9 @@
 
 #btn-7,
 #btn-8 {
-    display: none;
+  display: none;
 }
+
 .slider input[type="radio"] {
   display: none;
 }
@@ -325,11 +380,13 @@
 .slider-inner {
   overflow: hidden;
 }
+
 @media (min-width: @desktopWidth) {
   .slider-inner {
     padding-top: 50px;
     width: 660px;
   }
+
   .slides__slide {
     display: flex;
   }
@@ -354,10 +411,12 @@
   .ad-flex(flex; row; space-between; center; wrap);
   width: 50px;
 }
+
 .slider-controls label[for="btn-7"],
 .slider-controls label[for="btn-8"] {
   display: none;
 }
+
 .slider-controls label {
   .ad-flex(flex; row; center; center; wrap);
   width: 6px;
@@ -368,13 +427,16 @@
   transition: border 0.2s;
   border: 3px solid #ffffff;
 }
+
 @media (min-width: @desktopWidth) {
   .slider-controls {
     position: relative;
   }
+
   .slider-controls label {
     position: absolute;
   }
+
   .slider-controls label[for="btn-7"] {
     display: flex;
     right: 450px;
@@ -385,6 +447,7 @@
     height: 42px;
     opacity: 0.3;
   }
+
   .slider-controls label[for="btn-8"] {
     display: flex;
     left: 450px;
@@ -395,16 +458,17 @@
     height: 42px;
     opacity: 0.3;
   }
+
   .slider-controls label[for="btn-7"]:hover,
   .slider-controls label[for="btn-8"]:hover {
     opacity: 0.6;
   }
+
   .slider-controls label[for="btn-7"]:active,
   .slider-controls label[for="btn-8"]:active {
     opacity: 0.1;
   }
 }
-
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
@@ -423,6 +487,7 @@
   margin-top: 20px;
   overflow: hidden;
 }
+
 .slider-review::after {
   background: inherit;
   bottom: 0;
@@ -436,6 +501,7 @@
   transform-origin: 100%;
   z-index: -1;
 }
+
 @media (min-width: @desktopWidth) {
   .slider-review {
     background-color: #ffffff;
@@ -443,13 +509,16 @@
     padding-bottom: 0px;
   }
 }
+
 .description--title-add {
   display: none;
 }
+
 @media (min-width: @tabletWidth) {
   .slide-description {
     .ad-flex(flex; column-reverse; center; center; wrap);
   }
+
   .description--title-add {
     .ad-flex(flex; column; center; center; wrap);
     font-size: 14px;
@@ -457,9 +526,11 @@
     font-weight: normal;
     color: #283645;
   }
+
   .description--title {
     font-size: 20px;
   }
+
   .slides__slide--1,
   .slides__slide--2,
   .slides__slide--3 {
@@ -473,6 +544,7 @@
   #btn-8 {
     display: none;
   }
+
   .slider-controls label[for="btn-1"],
   .slider-controls label[for="btn-2"],
   .slider-controls label[for="btn-3"] {
@@ -480,18 +552,18 @@
   }
 }
 
-
 @media (min-width: @desktopWidth) {
   .description--title {
     font-size: 24px;
   }
 }
+
 @media (min-width: @desktopWidth) {
   .description--title-add {
     font-size: 18px;
   }
 }
+
 .active {
   background-color: #ffffff;
 }
-
