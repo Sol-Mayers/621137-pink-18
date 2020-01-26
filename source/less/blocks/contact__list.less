@@ -4,7 +4,7 @@
 
 @width: 276px;
 
-.contact__list {
+.about-me__contact-list {
   width: @width;
   .ad-flex(flex; column; center; center; wrap);
   margin-right: auto;
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: @tabletWidth) {
-  .contact__list {
+  .about-me__contact-list {
     width: 616px;
     box-sizing: border-box;
     padding: 47px 60px 25px 60px;
@@ -55,7 +55,7 @@
     border-radius: 3px;
   }
 
-  .contact__list::before {
+  .about-me__contact-list::before {
     content: "Контактная информация";
     color: @pink-color;
     text-transform: uppercase;
@@ -68,11 +68,11 @@
     text-align: center;
   }
 
-  .contact__list--item-inner {
+  .about-me__contact-list--item-inner {
     .ad-flex(flex; column-reverse; center; flex-start; wrap);
   }
 
-  .contact__list--item {
+  .about-me__contact-list--item {
     width: 496px;
   }
 
@@ -89,12 +89,12 @@
 }
 
 @media (min-width: @desktopWidth) {
-  .contact__list {
+  .about-me__contact-list {
     width: 936px;
     .ad-flex(flex; row; space-between; center; wrap);
   }
 
-  .contact__list--item {
+  .about-me__contact-list--item {
     width: 371px;
   }
 
@@ -103,7 +103,7 @@
     width: 371px;
   }
 
-  .contact__list::before {
+  .about-me__contact-list::before {
     content: "Контактная информация";
     color: @pink-color;
     text-transform: uppercase;

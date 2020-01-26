@@ -1,4 +1,4 @@
-.main-background--small {
+.page-main__background--small {
   min-height: 171px;
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@
   margin-right: auto;
 }
 
-.main-background__photo--small {
+.page-main__background-photo--small {
   min-width: 320px;
   min-height: 171px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
@@ -27,12 +27,12 @@
 }
 
 @media (min-resolution: @retina-dppx) {
-  .main-background__photo--small {
+  .page-main__background-photo--small {
     background-image: url(../img/bg-back-mobile@2x.jpg);
   }
 }
 
-.photo__text--small {
+.page-main__background-text--small {
   .ad-flex(flex; row; center; center; wrap);
   margin-top: 30px;
   color: #ffffff;
@@ -47,7 +47,7 @@
 }
 
 @media (min-width: 321px) {
-  .main-background__photo--small {
+  .page-main__background-photo--small {
     background-image: url(../img/bg-back-mobile@2x.jpg);
     background-repeat: no-repeat;
     margin-top: -69px;
@@ -56,25 +56,25 @@
 }
 
 @media (min-width: @tabletWidth) {
-  .main-background__photo--small {
+  .page-main__background-photo--small {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
     margin-top: -110px;
     padding-top: 110px;
   }
 
-  .main-background--small {
+  .page-main__background--small {
     min-height: 280px;
   }
   @media (min-resolution: @retina-dppx) {
-    .main-background__photo--small {
+    .page-main__background-photo--small {
       background-image: url(../img/bg-back-tablet@2x.jpg);
   }
 }
 }
 
 @media (min-width: @tabletWidth) {
-  .photo__text--small {
+  .page-main__background-text--small {
     width: 475px;
     padding: 0px;
     font-size: 50px;
@@ -84,15 +84,15 @@
 }
 
 @media (min-width: @desktopWidth) {
-  .photo__text--small {
+  .page-main__background-text--small {
     width: 740px;
   }
 
-  .main-background__photo--small {
+  .page-main__background-photo--small {
     background-image: url(../img/bg-back-desktop@1x.jpg);
   }
   @media (min-resolution: @retina-dppx) {
-    .main-background__photo--small {
+    .page-main__background-photo--small {
       background-image: url(../img/bg-back-desktop@2x.jpg);
   }
 }

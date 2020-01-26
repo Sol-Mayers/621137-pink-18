@@ -4,13 +4,13 @@
 
 @width: 276px;
 
-.send-message__form {
+.about-me__send-message-form {
   width: @width;
   .ad-flex(flex; column; center; center; wrap);
   padding-left: 0px;
 }
 
-.form__emotions {
+.about-me__emotions {
   color: @pink-color;
   text-transform: uppercase;
   font-size: 14px;
@@ -42,7 +42,7 @@
   border-color: @pink-color;
 }
 
-.form__send {
+.about-me__form-send {
   width: 276px;
   height: 60px;
   background-color: #2aab6d;
@@ -57,15 +57,15 @@
   cursor: pointer;
 }
 
-.form__send:hover {
+.about-me__form-send:hover {
   background-color: #1c9b5e;
 }
 
-.form__send:active {
+.about-me__form-send:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.form__necessary-items {
+.about-me__necessary {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -76,17 +76,17 @@
   color: @pink-color;
 }
 
-.form__send-tablet,
-.form__necessary-items-tablet {
+.about-me__form-send-medium,
+.about-me__necessary-medium {
   display: none;
 }
 
-.send-message__form-tablet {
+.about-me__send-message-form-medium {
   display: none;
 }
 
 @media (min-width: @tabletWidth) {
-  .send-message__form {
+  .about-me__send-message-form {
     margin-top: 60px;
     width: 616px;
     background-color: #ffffff;
@@ -97,7 +97,7 @@
     padding: 54px 60px 54px 60px;
   }
 
-  .form__emotions {
+  .about-me__emotions {
     width: 260px;
     margin: 0px;
     padding: 0px;
@@ -112,25 +112,25 @@
     min-height: 190px;
   }
 
-  .form__send,
-  .form__necessary-items {
+  .about-me__form-send,
+  .about-me__necessary {
     display: none;
   }
 
-  .send-message__form-tablet {
+  .about-me__send-message-form-medium {
     .ad-flex(flex; row; space-between; center; wrap);
     width: 616px;
     margin-top: 71px;
   }
 
-  .form__send-tablet,
-  .form__necessary-items-tablet {
+  .about-me__form-send-medium,
+  .about-me__necessary-medium {
     .ad-flex(flex; row; center; center; wrap);
     margin: 0px;
     padding: 0px;
   }
 
-  .form__send-tablet {
+  .about-me__form-send-medium {
     width: 296px;
     height: 60px;
     background-color: #2aab6d;
@@ -144,15 +144,15 @@
     cursor: pointer;
   }
 
-  .form__send-tablet:hover {
+  .about-me__form-send-medium:hover {
     background-color: #1c9b5e;
   }
 
-  .form__send-tablet:active {
+  .about-me__form-send-medium:active {
     color: rgba(255, 255, 255, 0.3);
   }
 
-  .form__necessary-items-tablet {
+  .about-me__necessary-medium {
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
@@ -161,7 +161,7 @@
 }
 
 @media (min-width: @desktopWidth) {
-  .send-message__form {
+  .about-me__send-message-form {
     width: 936px;
   }
 
@@ -169,7 +169,7 @@
     width: 816px;
   }
 
-  .send-message__form-tablet {
+  .about-me__send-message-form-medium {
     width: 936px;
   }
 }

@@ -18,7 +18,7 @@
   }
 }
 
-.filters__icons {
+.photo-editor__filter-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,7 +30,7 @@
 }
 
 @media (min-width: @tabletWidth) {
-  .filters__icons {
+  .photo-editor__filter-icons {
     flex-direction: column;
     width: 24px;
     padding: 0px;
@@ -46,7 +46,7 @@
   width: 240px;
 }
 
-.customize__filters {
+.photo-editor__make-filters {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,7 +74,7 @@
   border-top: 2px solid #dddfe0;
 }
 
-.send-yes {
+.customize__yes {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -90,16 +90,16 @@
   cursor: pointer;
 }
 
-.send-yes:hover {
+.customize__yes:hover {
   color: #ffffff;
   background-color: @pink-color;
 }
 
-.send-yes:active {
+.customize__yes:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.send-no {
+.customize__no {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -115,12 +115,12 @@
   cursor: pointer;
 }
 
-.send-no:hover {
+.customize__no:hover {
   border-color: #b5b9be;
   color: #b5b9be;
 }
 
-.send-no:active {
+.customize__no:active {
   background-color: #8d949b;
   color: #cbced2;
   border-color: #8d949b;
@@ -158,45 +158,32 @@
     border-top: 2px solid #dddfe0;
   }
 
-  .send-yes,
-  .send-no {
+  .customize__yes,
+  .customize__no {
     width: 260px;
   }
 }
 
-.custimize__photo {
+.photo-editor__customize-photo {
   width: 280px;
   height: 374px;
-  background: url(../img/photo-road-mobile@1x.jpg) no-repeat;
 }
-@media (min-resolution: @retina-dppx) {
-  .custimize__photo {
-    background: url(../img/photo-road-mobile@2x.jpg) no-repeat;
-    background-size: contain;
-  }
-}
+
 .tablet-range {
   display: none;
 }
 
 @media (min-width: @tabletWidth) {
-  .custimize__photo {
+  .photo-editor__customize-photo {
     width: 300px;
     height: 400px;
-    background: url(../img/photo-road-tablet@1x.jpg) no-repeat;
   }
-  @media (min-resolution: @retina-dppx) {
-  .custimize__photo {
-    background: url(../img/photo-road-tablet@2x.jpg) no-repeat;
-    background-size: contain;
-  }
-}
 
-  .fast-edit--customize {
+  .photo-editor__customize {
     .ad-flex(flex; row; space-between; center; wrap);
   }
 
-  .customize__filters {
+  .photo-editor__make-filters {
     width: 260px;
     flex-direction: row;
   }
@@ -256,27 +243,20 @@
     background-color: #f2f2f2;
   }
 
-  .custimize__photo {
+  .photo-editor__customize-photo {
     width: 300px;
     height: 400px;
-    background: url(../img/photo-road-desktop@1x.jpg) no-repeat;
   }
-  @media (min-resolution: @retina-dppx) {
-  .custimize__photo {
-    background: url(../img/photo-road-desktop@2x.jpg) no-repeat;
-    background-size: contain;
-  }
-}
 
-  .customize__filters-wrap {
+  .photo-editor__customize-filters-broad {
     width: 430px;
   }
 
-  .customize__filters {
+  .photo-editor__make-filters {
     width: 430px;
   }
 
-  .filters__icons {
+  .photo-editor__filter-icons {
     width: 44px;
   }
 
@@ -306,8 +286,8 @@
     border-top: 2px solid #dddfe0;
   }
 
-  .send-yes,
-  .send-no {
+  .customize__yes,
+  .customize__no {
     width: 183px;
     margin: 0px;
   }

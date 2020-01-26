@@ -4,7 +4,7 @@
 
 @width: 276px;
 
-.name__list {
+.about-me__name-tight {
   width: @width;
   .ad-flex(flex; column; center; center; wrap);
   padding-left: 0px;
@@ -39,17 +39,17 @@
 }
 
 @media (min-width: @tabletWidth) {
-  .name__list {
+  .about-me__name-tight {
     width: 616px;
     margin-top: 60px;
     margin-bottom: 30px;
   }
 
-  .name__list--item {
+  .about-me__name-list-item {
     width: 616px;
   }
 
-  .name__list--item-inner {
+  .about-me__name-list-item-inner {
     .ad-flex(flex; row; space-between; center; wrap);
     margin-bottom: 56px;
   }
@@ -74,7 +74,7 @@
 }
 
 @media (min-width: @desktopWidth) {
-  .name__list {
+  .about-me__name-tight {
     display: none;
   }
 
@@ -90,7 +90,7 @@
     width: 336px;
   }
 
-  .name__list--item {
+  .about-me__name-list-item {
     width: 432px;
   }
 }

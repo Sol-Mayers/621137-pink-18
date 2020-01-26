@@ -1,19 +1,40 @@
 @main-color: #ffffff;
 
-@main-font: 'OpenSans', 'Arial', sans-serif;
-
 @mobileWidth: 320px;
 
 @main-margin: 0px auto 0px auto;
 
 @main-padding: 0px;
 
+@font-face{
+  font-family: 'opensans';
+  src: url(../fonts/opensanslight.woff2) format('woff2'),
+  url(../fonts/opensanslight.woff) format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensans.woff2) format('woff2'),
+  url(../fonts/opensans.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensansbold.woff2) format('woff2'),
+    url(../fonts/opensansbold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 body {
   background-color: @main-color;
-  font-family: @main-font;
   padding: @main-padding;
   margin: @main-margin;
   min-width: @mobileWidth;
+  font-family: 'opensans', 'Arial', sans-serif;
 }
 html {
   overflow-x: hidden;
@@ -37,42 +58,43 @@ html {
   }
 }
 
+
 @import "mixins";
-
-@import "blocks/page-header";
-
-@import "blocks/main-background";
 
 @import "blocks/about-app";
 
-@import "blocks/advertisement-app";
-
-@import "blocks/price-menu";
-
-@import "blocks/page-footer";
-
-@import "blocks/page-main-photo";
-
-@import "blocks/main-background__photo--small";
-
-@import "blocks/advertisement-app-photo";
-
-@import "blocks/photo-editor";
-
-@import "blocks/page__footer";
-
-@import "blocks/form__main-description";
-
 @import "blocks/about-me";
-
-@import "blocks/name__list";
 
 @import "blocks/achievement__list";
 
+@import "blocks/advertisement-app";
+
+@import "blocks/advertisement-app-photo";
+
+@import "blocks/back-app";
+
 @import "blocks/contact__list";
 
-@import "blocks/system__list";
+@import "blocks/form__main-description";
+
+@import "blocks/main-background";
+
+@import "blocks/main-background__photo--small";
+
+@import "blocks/name__list";
+
+@import "blocks/page__footer";
+
+@import "blocks/page-footer";
+
+@import "blocks/page-header";
+
+@import "blocks/page-main-photo";
+
+@import "blocks/photo-editor";
+
+@import "blocks/price-menu";
 
 @import "blocks/send-message__form";
 
-@import "blocks/back-app";
+@import "blocks/system__list";
