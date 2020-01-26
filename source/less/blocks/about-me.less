@@ -2,10 +2,10 @@
   .ad-flex(flex; column; center; center; wrap);
 }
 
-.name__list,
-.achievement__list,
-.contact__list,
-.system__list {
+.about-me__name-tight,
+.about-me__achievement-list,
+.about-me__contact-list,
+.about-me__system-list-choise {
   list-style: none;
 }
 
@@ -29,7 +29,7 @@
   min-width: 320px;
 }
 
-.name-system-wrap {
+.about-me__name-system-wrap {
   display: none;
 }
 
@@ -38,11 +38,11 @@
     .ad-flex(flex; column; center; center; wrap);
   }
 
-  .achievement__list {
+  .about-me__achievement-list {
     order: 3;
   }
 
-  .contact__list {
+  .about-me__contact-list {
     order: 2;
   }
 }
@@ -54,13 +54,13 @@
     margin-right: auto;
   }
 
-  .name-system-wrap {
+  .about-me__name-system-wrap {
     .ad-flex(flex; row; space-between; center; wrap);
     margin-bottom: 10px;
     width: 936px;
   }
 
-  .name__list-desktop {
+  .about-me__name-list-broad {
     list-style: none;
     align-self: flex-start;
     width: 432px;
@@ -71,7 +71,7 @@
     min-height: 298px;
   }
 
-  .system__list-desktop {
+  .about-me__system-list-broad {
     width: 432px;
     min-height: 297px;
     margin-bottom: 30px;
@@ -84,7 +84,7 @@
     padding: 54px 60px 54px 60px;
   }
 
-  .system__list--item-desktop {
+  .about-me__system-list-item {
     .ad-flex(flex; row; flex-start; center; wrap);
     align-self: flex-start;
     padding-left: 0px;
@@ -94,15 +94,15 @@
     box-sizing: border-box;
   }
 
-  .system__list--item-desktop:nth-child(2) {
+  .about-me__system-list-item:nth-child(2) {
     margin-bottom: 30px;
   }
 
-  .system__list--item-desktop:nth-child(3) {
+  .about-me__system-list-item:nth-child(3) {
     margin-bottom: 30px;
   }
 
-  .form__system-desktop {
+  .about-me__form-text {
     width: 368px;
     margin: 0px;
     padding: 0px;

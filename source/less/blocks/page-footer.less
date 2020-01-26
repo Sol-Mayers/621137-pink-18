@@ -1,10 +1,10 @@
-.contacts {
+.page-footer__contacts {
   .ad-flex(flex; column; center; center; wrap);
   text-align: center;
   margin-top: 30px;
 }
 
-.contacts__title {
+.page-footer__contacts-title {
   font-size: 24px;
   font-weight: 300;
   color: #283645;
@@ -12,13 +12,13 @@
   width: 320px;
 }
 
-.conacts__option {
+.page-footer__contacts-option {
   width: 320px;
 }
 
 .tel,
-.call__academy,
-.call__adress {
+.page-footer__call-academy,
+.page-footer__call-adress {
   color: #d22856;
   text-decoration: none;
   font-size: 24px;
@@ -30,53 +30,53 @@
 }
 
 @media (min-width: @tabletWidth) {
-  .contacts__title {
+  .page-footer__contacts-title {
     font-size: 40px;
     width: 380px;
     line-height: 50px;
   }
 
-  .conacts__option {
+  .page-footer__contacts-option {
     .ad-flex(flex; row; center; center; wrap);
     width: 660px;
     box-sizing: border-box;
   }
 
-  .option--call {
+  .page-footer__call-to {
     margin-right: 40px;
   }
 
-  .option--write {
+  .page-footer__write-to {
     margin-left: 40px;
   }
 }
 
-.call__title {
+.page-footer__call-write-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .tel:hover,
-.call__academy:hover {
+.page-footer__call-academy:hover {
   color: @blue-color;
   text-decoration: underline;
 }
 
 .tel:active,
-.call__academy:active {
+.page-footer__call-academy:active {
   color: @blue-color;
   text-decoration: none;
   opacity: 0.3;
 }
 
-.contacts__map--marker {
+.page-footer__contacts-map-marker {
   position: absolute;
   top: 250px;
   z-index: 1;
 }
 
-.contacts__map--wrap {
+.page-footer__contacts-map-wrap {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -84,12 +84,12 @@
   align-items: center;
 }
 
-.contacts {
+.page-footer__contacts {
   position: relative;
   min-width: 320px;
 }
 
-.contacts--triangle {
+.page-footer__triangle {
   position: absolute;
   z-index: 1;
   background-repeat: no-repeat;
@@ -102,19 +102,19 @@
 }
 
 @media (min-width: @tabletWidth) {
-  .contacts--triangle {
+  .page-footer__triangle {
     top: 370px;
   }
 }
 
 @media (min-width: @desktopWidth) {
-  .contacts__title {
+  .page-footer__contacts-title {
     font-size: 50px;
     width: 500px;
     line-height: 50px;
   }
 
-  .conacts__option {
+  .page-footer__contacts-option {
     .ad-flex(flex; row; space-between; center; wrap);
     width: 1200px;
     box-sizing: border-box;
@@ -123,36 +123,36 @@
     padding-right: 100px;
   }
 
-  .option--call {
+  .page-footer__call-to {
     margin-right: 0px;
   }
 
-  .option--write {
+  .page-footer__write-to {
     margin-left: 0px;
     order: 3;
   }
 
   .tel,
-  .call__academy,
-  .call__adress {
+  .page-footer__call-academy,
+  .page-footer__call-adress {
     margin-bottom: 0px;
   }
 
-  .contacts--triangle {
+  .page-footer__triangle {
     top: 335px;
   }
 
-  .call__title {
+  .page-footer__call-write-title {
     padding-bottom: 20px;
   }
 }
 
-.page__footer-main {
+.footer-main {
   display: none;
 }
 
 @media (min-width: @tabletWidth) {
-  .page__footer-main {
+  .footer-main {
     .ad-flex(flex; row; center; center; wrap);
     min-width: 660px;
     min-height: 127px;
@@ -185,7 +185,7 @@
     .ad-flex(flex; row; center; center; wrap);
   }
 
-  .links__socialnetworks-main {
+  .footer-main__socialnetworks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -195,12 +195,12 @@
     padding-right: 10px;
   }
 
-  .footer__links-main {
+  .footer-main__links {
     width: 660px;
     .ad-flex(flex; row; space-between; center; wrap);
   }
 
-  .links__htmlacademy-main {
+  .footer-main__htmlacademy-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -208,21 +208,21 @@
     width: 120px;
   }
 
-  .htmlacademy__text {
+  .footer-main__htmlacademy-text {
     font-size: 14px;
     line-height: 18px;
     color: #283645;
   }
 
-  .htmlacademy__icon {
+  .footer-main__htmlacademy-icon {
     fill: #d22856;
   }
 
-  .htmlacademy__icon:hover {
+  .footer-main__htmlacademy-icon:hover {
     fill: @blue-color;
   }
 
-  .htmlacademy__icon:active {
+  .footer-main__htmlacademy-icon:active {
     fill: @blue-color;
     opacity: 0.3;
   }
@@ -258,7 +258,7 @@
 }
 
 @media (min-width: @desktopWidth) {
-  .footer__links-main {
+  .footer-main__links {
     width: 936px;
   }
 }
