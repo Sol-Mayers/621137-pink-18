@@ -2,30 +2,30 @@
   .page-main {
     position: relative;
   }
-  .about-app {
+  .page-main__about-app {
     background-color: transparent;
     position: absolute;
     z-index: 3;
     top: 190px;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     box-sizing: border-box;
-    padding-right: 245px;
+    padding-right: 300px;
   }
-  .photo__text {
+  .page-main__background-text {
     padding: 0px;
     height: 186px;
     width: 200px;
     z-index: 3;
     font-size: 40px;
     box-sizing: content-box;
-    padding-right: 250px;
+    padding-right: 300px;
   }
-  .main-background {
-    min-height: 619px;
+  .page-main__background {
+    height: 619px;
     min-width: 660px;
   }
-  .main-background__front {
+  .page-main__background-front {
     background-image: url(../img/iphone-hand-tablet@1x.png);
     background-repeat: no-repeat;
     top: 75px;
@@ -37,27 +37,27 @@
     background-position: bottom;
   }
   @media (min-resolution: @retina-dppx) {
-    .main-background__front {
+    .page-main__background-front {
     background-image: url(../img/iphone-hand-tablet@2x.png);
     background-size: contain;
     }
 }
-  .download__menu--description {
+  .page-main__download-menu-description {
     font-size: 18px;
   }
-  .download__menu {
+  .page-main__download-menu {
     width: 300px;
   }
-  .about-app__download {
+  .page-main__download {
     width: 300px;
   }
 }
 @media (min-width: @desktopWidth) {
-  .main-background {
+  .page-main__background {
     height: 853px;
     min-width: 1200px;
   }
-  .main-background__front {
+  .page-main__background-front {
     background-image: url(../img/iphone-hand-desktop@1x.png);
     background-repeat: no-repeat;
     top: 208px;
@@ -68,20 +68,20 @@
     position: absolute;
   }
   @media (min-resolution: @retina-dppx) {
-    .main-background__front {
+    .page-main__background-front {
     background-image: url(../img/iphone-hand-desktop@2x.png);
     background-size: contain;
     }
 }
-  .about-app {
+  .page-main__about-app {
     background-color: transparent;
     position: absolute;
     z-index: 3;
     top: 280px;
-    right: 510px;
+    right: 450px;
     box-sizing: border-box;
   }
-  .photo__text {
+  .page-main__background-text {
     padding: 0px;
     height: 186px;
     width: 240px;
@@ -91,10 +91,11 @@
     padding-right: 750px;
     padding-top: 60px;
   }
-  .about-app__download {
+  .page-main__download {
     margin-bottom: 80px;
   }
-  .download__menu-icons {
+  .page-main__download-icons {
     margin-bottom: 80px;
   }
 }
+
