@@ -10,8 +10,7 @@
   padding-left: 0px;
 }
 
-.item {
-  &--text {
+.about-me__item-text {
     min-height: 59px;
   width: @width;
   font-size: 18px;
@@ -20,14 +19,15 @@
   border: 2px solid #e5e5e5;
   border-radius: 3px;
 }
-  &--surname,&--name,&--thirdname {
+.about-me__item-upper,
+.about-me__item-middle,
+.about-me__item-downer {
   color: @pink-color;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
   margin-bottom: 2px;
   margin-left: 20px;
-}
 }
 
 .about-me__item-text:hover {
@@ -66,9 +66,9 @@
     width: 521px;
   }
 
-  .about-me__item-surname,
-  .about-me__item-name,
-  .about-me__item-thirdname {
+  .about-me__item-upper,
+  .about-me__item-middle,
+  .about-me__item-downer {
     margin-left: 0px;
   }
 }
