@@ -12,7 +12,7 @@
   padding-top: 20px;
 }
 
-.about-me__achievement-list--item {
+.about-me__achievement-list-item {
   width: 320px;
   margin-bottom: 47px;
   padding-left: 22px;
@@ -36,7 +36,7 @@
   display: none;
 }
 
-.item-box--change {
+.about-me__item-box-change {
   display: flex;
   width: 35px;
   height: 35px;
@@ -47,11 +47,11 @@
   border-radius: 3px;
 }
 
-.item-box--change:hover {
+.about-me__item-box-change:hover {
   border-color: @blue-color;
 }
 
-.item-box--change::before {
+.about-me__item-box-change::before {
   content: "";
   width: 20px;
   height: 8px;
@@ -66,15 +66,15 @@
   transform: rotate(-45deg);
 }
 
-.item-box:checked + .item-box--change::before {
+.item-box:checked + .about-me__item-box-change::before {
   opacity: 1;
 }
 
-.item-box:checked + .item-box--change {
+.item-box:checked + .about-me__item-box-change {
   border-color: @pink-color;
 }
 
-.item-wrap {
+.about-me__achievement-item-wrap {
   color: @blue-color;
   font-size: 18px;
   .ad-flex(flex; row; flex-start; center; wrap);
@@ -106,7 +106,7 @@
     display: none;
   }
 
-  .about-me__achievement-list--item {
+  .about-me__achievement-list-item {
     align-self: flex-start;
   }
 }
@@ -121,12 +121,12 @@
     left: 250px;
   }
 
-  .about-me__achievement-list--item {
+  .about-me__achievement-list-item {
     width: 260px;
     padding-left: 0px;
   }
 
-  .item-box--change {
+  .about-me__item-box-change {
     margin-right: 20px;
   }
 
