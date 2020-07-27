@@ -89,24 +89,6 @@
   min-width: 320px;
 }
 
-.page-footer__triangle {
-  position: absolute;
-  z-index: 1;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: contain;
-  left: 0px;
-  right: 0px;
-  top: 370px;
-  background-position: bottom;
-}
-
-@media (min-width: @tabletWidth) {
-  .page-footer__triangle {
-    top: 370px;
-  }
-}
-
 @media (min-width: @desktopWidth) {
   .page-footer__contacts-title {
     font-size: 50px;
@@ -115,7 +97,7 @@
   }
 
   .page-footer__contacts-option {
-    .ad-flex(flex; row; space-between; center; wrap);
+    .ad-flex(flex; row; space-between; flex-start; wrap);
     width: 1200px;
     box-sizing: border-box;
     padding-bottom: 20px;
@@ -130,6 +112,10 @@
   .page-footer__write-to {
     margin-left: 0px;
     order: 3;
+  }
+  .page-footer__come-to {
+    box-sizing: border-box;
+    padding-left: 40px;
   }
 
   .tel,
@@ -260,5 +246,29 @@
 @media (min-width: @desktopWidth) {
   .footer-main__links {
     width: 936px;
+  }
+}
+
+.page-footer__triangle {
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  left: 0px;
+  right: 0px;
+  top: 405px;
+  background-position: bottom;
+}
+
+@media (min-width: @tabletWidth) {
+  .page-footer__triangle {
+    top: 395px;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .page-footer__triangle {
+    top: 350px;
   }
 }
